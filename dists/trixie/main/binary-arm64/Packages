@@ -22,19 +22,19 @@ Description: terminal engine for Kilix
 
 Package: kilix-native
 Architecture: arm64
-Version: 0.2.3+packaging1
+Version: 0.2.3+packaging2
 Priority: optional
 Section: x11
 Source: kilix
 Maintainer: itsmygithubacct <itsmygithubacct@users.noreply.github.com>
-Installed-Size: 345
+Installed-Size: 346
 Depends: libc6 (>= 2.38)
-Filename: pool/main/k/kilix-native/kilix-native_0.2.3+packaging1_arm64.deb
-Size: 70808
-MD5sum: 94700090ade25ca0c922d836902c55d5
-SHA1: 839e6eec4a0c3eba72364c1e6a8653588a2d46ad
-SHA256: 4b75259ba55ffe81dc6c9d30c8fe4892a3ecea7a058c227931e60f2708c5f575
-SHA512: b7121346c9bc583d81a1722da2cbaf04121f347700d25f3fdcefffdaabac3641870162a1c0a86117c7cbdb239a370dbad8e00853a951f4691cfeae57a8742b1a
+Filename: pool/main/k/kilix-native/kilix-native_0.2.3+packaging2_arm64.deb
+Size: 70916
+MD5sum: 3ba7c7e069f4d9c8c7d9faa2c123617d
+SHA1: 8f52a2920e2bdcc2396d81fb212ef0edef9980a0
+SHA256: b8473dab758b9ab932bd02b1278f94320d0092db86d7302608ae5f5b69fa0737
+SHA512: 3964d2d90242160c82b15e494793e11100c9a33b78b2a433a22ada612aed418e29e4518f580f4f14c7c2766a6c0af3cdc64d77251dfcc08ae184134727373084
 Homepage: https://github.com/itsmygithubacct/kilix
 Description: compiled helpers for the Kilix terminal desktop
  Kilix builds a few small C programs for each user the first time they are
