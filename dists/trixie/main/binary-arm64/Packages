@@ -1,0 +1,99 @@
+Package: plebian-archive-keyring
+Architecture: all
+Version: 0.2.3+packaging1
+Priority: optional
+Section: admin
+Source: plebian-os
+Maintainer: itsmygithubacct <itsmygithubacct@users.noreply.github.com>
+Installed-Size: 13
+Filename: pool/main/p/plebian-archive-keyring/plebian-archive-keyring_0.2.3+packaging1_all.deb
+Size: 3420
+MD5sum: ea9d97fea6ba59983aed9c1ce8c88207
+SHA1: 0a9770ce277c1980b99db6534005323c371b6861
+SHA256: adc0230e9bc4ddcd05162a1fb1a10109434a5a59427367dee72788ec1d90bfd8
+SHA512: f95fc72a31f8e6923cc705aca83df59799698ca8c16e352d9877953febf37308498338d68f67ec544d1f8a6074991f07b21caad110b9ccd896aee883d4abfa0b
+Homepage: https://github.com/itsmygithubacct/plebian-os
+Description: Plebian-OS archive signing key
+ The public key that signs the Plebian-OS package repository. It is installed
+ where an apt source can name it with Signed-By, and is trusted for no other
+ repository.
+
+Package: plebian-desktop-base
+Architecture: all
+Version: 0.2.3+packaging1
+Priority: optional
+Section: admin
+Source: plebian-os
+Maintainer: itsmygithubacct <itsmygithubacct@users.noreply.github.com>
+Installed-Size: 1730
+Filename: pool/main/p/plebian-desktop-base/plebian-desktop-base_0.2.3+packaging1_all.deb
+Size: 1738312
+MD5sum: 69a52774f97f0219ad838e61d222444c
+SHA1: 0050f9677dbe9bdecd93917201690c9f84f009e9
+SHA256: 60a4c767c1a547f804c4fd720aa3f9c903328f061b0ccc1da6f547f69aa7f49d
+SHA512: 3842764795113ec1d16fff1d09f0895fd3f5334eb9301b16cccfa254b09b799fb1a4578c0e71f1d2c0031a8571ac96bc28c0cbc251ae691f2f0ac840ac353c90
+Homepage: https://github.com/itsmygithubacct/plebian-os
+Description: Plebian-OS desktop artwork and login defaults
+ The Plebian-OS wallpaper, the login greeter settings that use it, and the
+ attribution and licence notices for the artwork.
+
+Package: plebian-os-firstboot
+Architecture: all
+Version: 0.2.3+packaging1
+Priority: optional
+Section: admin
+Source: plebian-os
+Maintainer: itsmygithubacct <itsmygithubacct@users.noreply.github.com>
+Installed-Size: 501
+Depends: plebian-os-tools (= 0.2.3+packaging1), systemd
+Filename: pool/main/p/plebian-os-firstboot/plebian-os-firstboot_0.2.3+packaging1_all.deb
+Size: 101688
+MD5sum: 449417837ca9808f47fa9116db99ea76
+SHA1: 2b73f6bd5dd217472dc42ff4f31ecde661ae5998
+SHA256: 76384cbf03833307342d66d521d945456c68622f9fc017fb4296e76ae98ac352
+SHA512: 9007ed1f1667ad80db353713060ecf537d5d1652d7e745be468a38575d49061a140906b339ddac38473d03ac2833872e2ddd8faeb1e507457f7e681efb472ef2
+Homepage: https://github.com/itsmygithubacct/plebian-os
+Description: Plebian-OS first-boot provisioning
+ The provisioner that turns a fresh Debian installation into Plebian-OS and
+ the systemd unit that runs it once. Installing this package does not enable
+ the unit: the installer does that for a new machine.
+
+Package: plebian-os-release
+Architecture: all
+Version: 0.2.3+packaging1
+Priority: optional
+Section: admin
+Source: plebian-os
+Maintainer: itsmygithubacct <itsmygithubacct@users.noreply.github.com>
+Installed-Size: 33
+Filename: pool/main/p/plebian-os-release/plebian-os-release_0.2.3+packaging1_all.deb
+Size: 10736
+MD5sum: 1bfe23d3a167e1b6c256fdce0a3af47e
+SHA1: 31498f0dac92a5db201ab866185128072915f7ea
+SHA256: 852e3debc12d81487375647ecb8c9ba677258ff3e223f05efecc31e3e9548ba7
+SHA512: 07fc73ffa5f0797bbeda8462d001caad2c98482d39d3ad6dd6cc5e9d4689796da19c8c3e026769d14f31505cdca00b8d8fd0efa706788d79b749d40913750c92
+Homepage: https://github.com/itsmygithubacct/plebian-os
+Description: Plebian-OS release identity
+ The installed Plebian-OS version and the release manifest that pins the
+ runtime components of that release.
+
+Package: plebian-os-tools
+Architecture: all
+Version: 0.2.3+packaging1
+Priority: optional
+Section: admin
+Source: plebian-os
+Maintainer: itsmygithubacct <itsmygithubacct@users.noreply.github.com>
+Installed-Size: 980
+Depends: plebian-os-release (= 0.2.3+packaging1), python3, git, sudo, curl, ca-certificates
+Filename: pool/main/p/plebian-os-tools/plebian-os-tools_0.2.3+packaging1_all.deb
+Size: 185012
+MD5sum: d269ecc2d782dbcb6e70b492e8be1da1
+SHA1: 604865b55e39317baf33ba278aab12440758867e
+SHA256: 45cb526e7bb178878fec56060e759fd258632074a730c2e13d121aa1022a1cb9
+SHA512: b4a06109c7629b2e74e12fee88bdd81acdc1e1fa458624ede677055cb01cd4072a7e510ed97f76acd3bd05791f1218d1a6f9769bcb4fa148bea108d41adf1e1b
+Homepage: https://github.com/itsmygithubacct/plebian-os
+Description: Plebian-OS administration tools
+ The release updater and its closure selector, and the root helpers that
+ install and verify the optional runtimes of a Plebian-OS release.
+

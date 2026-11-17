@@ -1,0 +1,27 @@
+Architectures: amd64 arm64
+Codename: trixie
+Components: main
+Date: Tue, 17 Nov 2026 04:28:14 +0000
+Label: Plebian-OS
+Origin: Plebian-OS
+Suite: trixie
+MD5Sum:
+ ac3f995a4fa1b2cc3a40e9a994064254             4498 main/binary-amd64/Packages
+ f7e417d120cc26ed29b80ec867a1f363             1757 main/binary-amd64/Packages.gz
+ ac3f995a4fa1b2cc3a40e9a994064254             4498 main/binary-arm64/Packages
+ f7e417d120cc26ed29b80ec867a1f363             1757 main/binary-arm64/Packages.gz
+SHA1:
+ f6e929e449178bccaebb483a113d90a1095ee75f             4498 main/binary-amd64/Packages
+ 2b998b69e22575d228b7b0e857230df91a5a525a             1757 main/binary-amd64/Packages.gz
+ f6e929e449178bccaebb483a113d90a1095ee75f             4498 main/binary-arm64/Packages
+ 2b998b69e22575d228b7b0e857230df91a5a525a             1757 main/binary-arm64/Packages.gz
+SHA256:
+ 82512cf802e751adedd0542fa291baa6557910cfb7a9e32221045f93e8812820             4498 main/binary-amd64/Packages
+ b26887df26f2e14a72a28dcdbfc171be0fefdd8842a5853643a2acb3180514da             1757 main/binary-amd64/Packages.gz
+ 82512cf802e751adedd0542fa291baa6557910cfb7a9e32221045f93e8812820             4498 main/binary-arm64/Packages
+ b26887df26f2e14a72a28dcdbfc171be0fefdd8842a5853643a2acb3180514da             1757 main/binary-arm64/Packages.gz
+SHA512:
+ c35ae149f9679d8b861166b7087877b004d788bb09364bf08aedd4d82a747edd271813b892768a231ac201a1ec9b832c13ac6f2277008288a4674aadc3a335cb             4498 main/binary-amd64/Packages
+ 90f50e900d40e127345f1b5cdba565fab6cf8d9d16c0a956e6bbb56f2323439e8de54ebc7c06c4a8b551aeb7f5a902d7952cff60c2b25f33fc5807aecfb1317f             1757 main/binary-amd64/Packages.gz
+ c35ae149f9679d8b861166b7087877b004d788bb09364bf08aedd4d82a747edd271813b892768a231ac201a1ec9b832c13ac6f2277008288a4674aadc3a335cb             4498 main/binary-arm64/Packages
+ 90f50e900d40e127345f1b5cdba565fab6cf8d9d16c0a956e6bbb56f2323439e8de54ebc7c06c4a8b551aeb7f5a902d7952cff60c2b25f33fc5807aecfb1317f             1757 main/binary-arm64/Packages.gz
