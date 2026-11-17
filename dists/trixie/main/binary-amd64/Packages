@@ -20,6 +20,32 @@ Description: terminal engine for Kilix
  /usr/lib/kilix/engine: nothing is placed on PATH, and the package can be
  installed beside Debian's kitty.
 
+Package: kilix-multiplexer
+Architecture: amd64
+Version: 0.2.3+packaging2
+Priority: optional
+Section: x11
+Source: kilix
+Maintainer: itsmygithubacct <itsmygithubacct@users.noreply.github.com>
+Installed-Size: 355
+Depends: libkilix-encodec (>= 0.1.5+git320ce65ba2e4.d9a1335db520), libc6 (>= 2.38), libsamplerate0 (>= 0.1.7), libssl3t64 (>= 3.0.0), libzstd1 (>= 1.5.5), zlib1g (>= 1:1.2.0)
+Filename: pool/main/k/kilix-multiplexer/kilix-multiplexer_0.2.3+packaging2_amd64.deb
+Size: 98188
+MD5sum: 2d6c1ea5612be9ebb12175d8fa608da6
+SHA1: ff85ee7e5a971b5516bc1b4935a964e51492c535
+SHA256: 48ea24d3021b3e666638b7d430235a747ec6376e0f10e1faacebcd119404864e
+SHA512: b1b1fff304ca01a3e881bd876d34b7a7ac728cfa2b3f6b16832d09e2f445ba50fd28fbd6892c8896fe37a809c58e13ff60864fe767545eeb80d594277aafb584
+Homepage: https://github.com/itsmygithubacct/kilix
+Description: remote terminal programs for the Kilix terminal desktop
+ The two programs behind "kilix remote": kmx-serve shares a Kilix pane over
+ an encrypted connection and kmx-attach connects to one, with predictive
+ echo and optional EnCodec audio. Kilix otherwise compiles them per user.
+ .
+ Both are installed under /usr/lib/kilix/native. Nothing is added to PATH.
+ .
+ Built for amd64 only: the audio codec library it links, libkilix-encodec,
+ and the ONNX Runtime build that library needs exist for amd64 only.
+
 Package: kilix-native
 Architecture: amd64
 Version: 0.2.3+packaging2
@@ -48,6 +74,58 @@ Description: compiled helpers for the Kilix terminal desktop
  .
  Everything is installed under /usr/lib/kilix/native. Nothing is added to
  PATH or to the system library path.
+
+Package: libkilix-encodec
+Architecture: amd64
+Version: 0.1.5+git320ce65ba2e4.d9a1335db520
+Priority: optional
+Section: libs
+Maintainer: itsmygithubacct <itsmygithubacct@users.noreply.github.com>
+Depends: libonnxruntime1.21 (>= 1.21.0+dfsg-1+kilix1), libssl3t64 (>= 3.5.6-1~deb13u2), libc6 (>= 2.41-12+deb13u3), libabsl20240722 (>= 20240722.0-4), libcpuinfo0 (>= 0.0~git20250327.39ea79a-1), libgcc-s1 (>= 14.2.0-19), libonnx1t64 (>= 1.17.0-3+b1), libprotobuf32t64 (>= 3.21.12-11+deb13u1), libpthreadpool0 (>= 0.0~git20240616.560c60d-1), libre2-11 (>= 20240702-3+b1), libstdc++6 (>= 14.2.0-19), libxnnpack0.20241108 (>= 0.0~git20241108.4ea82e5-2), libzstd1 (>= 1.5.7+dfsg-1), zlib1g (>= 1:1.3.dfsg+really1.3.1-1+b1)
+Filename: pool/main/l/libkilix-encodec/libkilix-encodec_0.1.5+git320ce65ba2e4.d9a1335db520_amd64.deb
+Size: 773612
+MD5sum: b6461b470d76f08579868024b612903e
+SHA1: 48c20e281dcfc6ff3c841169d2767659e05940a1
+SHA256: 217ac761a022067deedf993aabdc11219358fe5eacdea6a66eb8bab13bee4bed
+SHA512: 4c88b8a9ac0512aac446a9c6edd64d65255c1df4700b7de7c3314dde36981970bbefb80b6248dd3c32ee527eb2eddd5a6d5754666d54261851ba7943a76e37a4
+Description: Shared Kilix codec and installed-content admission
+ No model payload or model authorization is included.
+
+Package: libonnxruntime-dev
+Architecture: amd64
+Version: 1.21.0+dfsg-1+kilix1
+Multi-Arch: same
+Priority: optional
+Section: libs
+Maintainer: itsmygithubacct <itsmygithubacct@users.noreply.github.com>
+Installed-Size: 601
+Depends: libonnxruntime1.21 (= 1.21.0+dfsg-1+kilix1)
+Filename: pool/main/l/libonnxruntime-dev/libonnxruntime-dev_1.21.0+dfsg-1+kilix1_amd64.deb
+Size: 96548
+MD5sum: 3af615ade2d0b9acdbafe444a0d649ab
+SHA1: 1a7f1c9bd3bfd9713c6a476be913a261ea8198be
+SHA256: b0ce49106fc12e73a07c62ed27e4d119c36cb58102e51310c416d235a91b7026
+SHA512: ad87b2111020249d1a82ed481aa24d1c8237adba353239151d9bf873095445d9499dc524dbc429cc763eaa0b5e9c3dbca9bfbfeb46678c06f9677d7e99ef664b
+Description: pinned Kilix ONNX Runtime development candidate
+ Debian system-ONNX registration and SSE2 inference fixes.
+
+Package: libonnxruntime1.21
+Architecture: amd64
+Version: 1.21.0+dfsg-1+kilix1
+Multi-Arch: same
+Priority: optional
+Section: libs
+Maintainer: itsmygithubacct <itsmygithubacct@users.noreply.github.com>
+Installed-Size: 14916
+Depends: libc6 (>= 2.38), libcpuinfo0 (>= 0.0~git20240830.fa1c679), libdnnl3.6 (>= 3.5.3), libgcc-s1 (>= 4.0), libonnx1t64 (>= 1.17.0), libprotobuf32t64 (>= 3.21.12), libpthreadpool0 (>= 0.0~git20200423.6acde9c), libre2-11-absl20240722, libstdc++6 (>= 14), libxnnpack0.20241108 (>= 0.0~git20241108.4ea82e5)
+Filename: pool/main/l/libonnxruntime1.21/libonnxruntime1.21_1.21.0+dfsg-1+kilix1_amd64.deb
+Size: 4037280
+MD5sum: 69460cbdaa2c517a1102d9f69bf54e34
+SHA1: ff785b7ed1d48d2de4afb426f3815516755d85d3
+SHA256: 8e0fbcd748da21a7f35c467c02d04b0a62cc37d3de48249a99f5bd14d5f46fa3
+SHA512: 426e7e087ea59a3fd978848c04f82ebf9116536b1d78bc9ed65e5fa20c0f931b55c87a659c9e1978fbc51eb09daaa411ea812f6e6d1834c5c556bc61350c3635
+Description: pinned Kilix ONNX Runtime development candidate
+ Debian system-ONNX registration and SSE2 inference fixes.
 
 Package: plebian-archive-keyring
 Architecture: all
