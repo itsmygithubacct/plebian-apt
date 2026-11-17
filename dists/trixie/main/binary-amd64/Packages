@@ -22,19 +22,19 @@ Description: terminal engine for Kilix
 
 Package: kilix-multiplexer
 Architecture: amd64
-Version: 0.2.3+packaging2
+Version: 0.2.3+packaging3
 Priority: optional
 Section: x11
 Source: kilix
 Maintainer: itsmygithubacct <itsmygithubacct@users.noreply.github.com>
 Installed-Size: 355
-Depends: libkilix-encodec (>= 0.1.5+git320ce65ba2e4.d9a1335db520), libc6 (>= 2.38), libsamplerate0 (>= 0.1.7), libssl3t64 (>= 3.0.0), libzstd1 (>= 1.5.5), zlib1g (>= 1:1.2.0)
-Filename: pool/main/k/kilix-multiplexer/kilix-multiplexer_0.2.3+packaging2_amd64.deb
-Size: 98188
-MD5sum: 2d6c1ea5612be9ebb12175d8fa608da6
-SHA1: ff85ee7e5a971b5516bc1b4935a964e51492c535
-SHA256: 48ea24d3021b3e666638b7d430235a747ec6376e0f10e1faacebcd119404864e
-SHA512: b1b1fff304ca01a3e881bd876d34b7a7ac728cfa2b3f6b16832d09e2f445ba50fd28fbd6892c8896fe37a809c58e13ff60864fe767545eeb80d594277aafb584
+Depends: libkilix-encodec (>= 0.1.5), libc6 (>= 2.38), libsamplerate0 (>= 0.1.7), libssl3t64 (>= 3.0.0), libzstd1 (>= 1.5.5), zlib1g (>= 1:1.2.0)
+Filename: pool/main/k/kilix-multiplexer/kilix-multiplexer_0.2.3+packaging3_amd64.deb
+Size: 98280
+MD5sum: 74966b78eff88b960a7137d5f3ee9a9b
+SHA1: a2a60e539790d7f1741bc1cc74fde0f4f8596745
+SHA256: 34ff71f20c754bd70c1e83b41a3a83ee0f096143766f33900d62a7e5f82e2365
+SHA512: a8dfa6175e2f5ed00964c860dc08b4d4f512370df3664d7b810ca922b004952da78912a67b7a579f9341c5701338ec086f956e3c29c103427908e8f2a53a854a
 Homepage: https://github.com/itsmygithubacct/kilix
 Description: remote terminal programs for the Kilix terminal desktop
  The two programs behind "kilix remote": kmx-serve shares a Kilix pane over
@@ -43,24 +43,24 @@ Description: remote terminal programs for the Kilix terminal desktop
  .
  Both are installed under /usr/lib/kilix/native. Nothing is added to PATH.
  .
- Built for amd64 only: the audio codec library it links, libkilix-encodec,
- and the ONNX Runtime build that library needs exist for amd64 only.
+ It links the audio codec library libkilix-encodec, which needs the patched
+ ONNX Runtime 1.21 build from the same archive.
 
 Package: kilix-native
 Architecture: amd64
-Version: 0.2.3+packaging2
+Version: 0.2.3+packaging3
 Priority: optional
 Section: x11
 Source: kilix
 Maintainer: itsmygithubacct <itsmygithubacct@users.noreply.github.com>
 Installed-Size: 204
 Depends: libc6 (>= 2.38)
-Filename: pool/main/k/kilix-native/kilix-native_0.2.3+packaging2_amd64.deb
-Size: 74064
-MD5sum: 3827015fe8d9314fe4b7a3909b8c6b3e
-SHA1: 8c259bc5aa02921aea9a75addfe93b7011fd978a
-SHA256: e21a85f1738de3c9f1d8705d1912d84b56c0a575b281aa07ccef78988b801931
-SHA512: c42c15ecee2ac487218d5216ca4d17d0a93bc89c073b66e7fcfff3656d370c81d634b554d37b1633a5ff8842666fd34d1efe81e3706d9f68f6a2f9401d4e59ed
+Filename: pool/main/k/kilix-native/kilix-native_0.2.3+packaging3_amd64.deb
+Size: 74120
+MD5sum: 8692db2dbab1d21411bf8b9a593cc1ef
+SHA1: a4243c3591c10fe41b17b8538904bb134977ae13
+SHA256: 55e830b88d8767abfa5872ca9c111452a7f9decfe9a0a64302d5eb3b5e0697d3
+SHA512: 910e62c5d8a79d94472396189e8159aea42599dfae38fc266b804382658c522dddf8261eedd6d46a34f2fc92e089afb5ef1925b1b0d403b6778376acc6f2d6a9
 Homepage: https://github.com/itsmygithubacct/kilix
 Description: compiled helpers for the Kilix terminal desktop
  Kilix builds a few small C programs for each user the first time they are

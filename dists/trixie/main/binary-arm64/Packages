@@ -20,21 +20,47 @@ Description: terminal engine for Kilix
  /usr/lib/kilix/engine: nothing is placed on PATH, and the package can be
  installed beside Debian's kitty.
 
+Package: kilix-multiplexer
+Architecture: arm64
+Version: 0.2.3+packaging3
+Priority: optional
+Section: x11
+Source: kilix
+Maintainer: itsmygithubacct <itsmygithubacct@users.noreply.github.com>
+Installed-Size: 403
+Depends: libkilix-encodec (>= 0.1.5), libc6 (>= 2.38), libsamplerate0 (>= 0.1.7), libssl3t64 (>= 3.0.0), libzstd1 (>= 1.5.5), zlib1g (>= 1:1.2.0)
+Filename: pool/main/k/kilix-multiplexer/kilix-multiplexer_0.2.3+packaging3_arm64.deb
+Size: 92156
+MD5sum: c755c695a06f92f5e0c4d9ce67e306d2
+SHA1: 6ebd1ee81e914a2019d579a3135b76038330d5fe
+SHA256: b49e5cf7e3c4596adb1628802e3a79d61e2ff5854ef1a546387b5e23053ed064
+SHA512: d2c4cea0e96c5c26f2dbb7f37414aa8b1a6fe710cb1ec0e70e74485bc314a6e0f3e1cd0f81f42622e506205e2a5748f1d169791a443f5a3e1a866b73a98590eb
+Homepage: https://github.com/itsmygithubacct/kilix
+Description: remote terminal programs for the Kilix terminal desktop
+ The two programs behind "kilix remote": kmx-serve shares a Kilix pane over
+ an encrypted connection and kmx-attach connects to one, with predictive
+ echo and optional EnCodec audio. Kilix otherwise compiles them per user.
+ .
+ Both are installed under /usr/lib/kilix/native. Nothing is added to PATH.
+ .
+ It links the audio codec library libkilix-encodec, which needs the patched
+ ONNX Runtime 1.21 build from the same archive.
+
 Package: kilix-native
 Architecture: arm64
-Version: 0.2.3+packaging2
+Version: 0.2.3+packaging3
 Priority: optional
 Section: x11
 Source: kilix
 Maintainer: itsmygithubacct <itsmygithubacct@users.noreply.github.com>
 Installed-Size: 346
 Depends: libc6 (>= 2.38)
-Filename: pool/main/k/kilix-native/kilix-native_0.2.3+packaging2_arm64.deb
-Size: 70916
-MD5sum: 3ba7c7e069f4d9c8c7d9faa2c123617d
-SHA1: 8f52a2920e2bdcc2396d81fb212ef0edef9980a0
-SHA256: b8473dab758b9ab932bd02b1278f94320d0092db86d7302608ae5f5b69fa0737
-SHA512: 3964d2d90242160c82b15e494793e11100c9a33b78b2a433a22ada612aed418e29e4518f580f4f14c7c2766a6c0af3cdc64d77251dfcc08ae184134727373084
+Filename: pool/main/k/kilix-native/kilix-native_0.2.3+packaging3_arm64.deb
+Size: 70952
+MD5sum: e5e8a98470a7df9ec6756e7386d757cb
+SHA1: 079273cffc67ba76fa218705000b261778e845f4
+SHA256: c104456858fbc7f742a8cc0333efaa1e98fccb6f31b50af22638d8e52f62577a
+SHA512: 30e56c75f223784546fddad8ea2e7ffb93182f5528403d414da7a0fde5ed58811898428c34c9d62ea5b767e7ff8100c87bf82e747d90b78a9e29f922e684713a
 Homepage: https://github.com/itsmygithubacct/kilix
 Description: compiled helpers for the Kilix terminal desktop
  Kilix builds a few small C programs for each user the first time they are
@@ -48,6 +74,58 @@ Description: compiled helpers for the Kilix terminal desktop
  .
  Everything is installed under /usr/lib/kilix/native. Nothing is added to
  PATH or to the system library path.
+
+Package: libkilix-encodec
+Architecture: arm64
+Version: 0.1.5+giteaf11af26271.d9a1335db520
+Priority: optional
+Section: libs
+Maintainer: itsmygithubacct <itsmygithubacct@users.noreply.github.com>
+Depends: libonnxruntime1.21 (>= 1.21.0+dfsg-1+kilix2), libssl3t64 (>= 3.5.7-1~deb13u3), libc6 (>= 2.41-12+deb13u4), libabsl20240722 (>= 20240722.0-4), libcpuinfo0 (>= 0.0~git20250327.39ea79a-1), libgcc-s1 (>= 14.2.0-19), libonnx1t64 (>= 1.17.0-3+b1), libprotobuf32t64 (>= 3.21.12-11+deb13u1), libpthreadpool0 (>= 0.0~git20240616.560c60d-1), libre2-11 (>= 20240702-3+b1), libstdc++6 (>= 14.2.0-19), libxnnpack0.20241108 (>= 0.0~git20241108.4ea82e5-2), libzstd1 (>= 1.5.7+dfsg-1), zlib1g (>= 1:1.3.dfsg+really1.3.1-1+b1)
+Filename: pool/main/l/libkilix-encodec/libkilix-encodec_0.1.5+giteaf11af26271.d9a1335db520_arm64.deb
+Size: 781564
+MD5sum: 5bf953118ee9e0f4a18ecf0476a120ad
+SHA1: 05b8c20d1ed0c5ad39ee6bff88cb21157f0a739d
+SHA256: d12e287a103d7528f1fae31786f2edaca1a5a092ffb536fa948ef9ff2fc0bb6c
+SHA512: a241c7e7b0e60061d29fb7be2d1232e88691105c735f280f982525ef2fea8291a093953f4cd24c36930244ccf8a4d6c3a44fd724d1d86e42b9486f0fc253f73c
+Description: Shared Kilix codec and installed-content admission
+ No model payload or model authorization is included.
+
+Package: libonnxruntime-dev
+Architecture: arm64
+Version: 1.21.0+dfsg-1+kilix2
+Multi-Arch: same
+Priority: optional
+Section: libs
+Maintainer: itsmygithubacct <itsmygithubacct@users.noreply.github.com>
+Installed-Size: 610
+Depends: libonnxruntime1.21 (= 1.21.0+dfsg-1+kilix2)
+Filename: pool/main/l/libonnxruntime-dev/libonnxruntime-dev_1.21.0+dfsg-1+kilix2_arm64.deb
+Size: 97324
+MD5sum: 8eeab6ab767cd5bd4346977a2a4a0988
+SHA1: ee23285ef0fdb83fbfde6d2ce0ccdcb90f3edcd1
+SHA256: 461df0e4fc37628ba1fed62c56b705b0620d0b15be0e80d20addff8934c8677b
+SHA512: c66d16c460538cbd432fb74b4134d9c484e753996f2350d7e0271b9e9892a86d50cda8085d081ee831b772cc2bf67f425def89b61a6d4f7c76f6b91c8e8e63a6
+Description: pinned Kilix ONNX Runtime development candidate
+ Debian system-ONNX registration and SSE2 inference fixes.
+
+Package: libonnxruntime1.21
+Architecture: arm64
+Version: 1.21.0+dfsg-1+kilix2
+Multi-Arch: same
+Priority: optional
+Section: libs
+Maintainer: itsmygithubacct <itsmygithubacct@users.noreply.github.com>
+Installed-Size: 12910
+Depends: libc6 (>= 2.38), libcpuinfo0 (>= 0.0~git20240830.fa1c679), libdnnl3.6 (>= 3.5.3), libgcc-s1 (>= 4.0), libonnx1t64 (>= 1.17.0), libprotobuf32t64 (>= 3.21.12), libpthreadpool0 (>= 0.0~git20200423.6acde9c), libre2-11-absl20240722, libstdc++6 (>= 14), libxnnpack0.20241108 (>= 0.0~git20241108.4ea82e5)
+Filename: pool/main/l/libonnxruntime1.21/libonnxruntime1.21_1.21.0+dfsg-1+kilix2_arm64.deb
+Size: 3284944
+MD5sum: 9646614ad499f4ec5c24dcb803b6ee7f
+SHA1: 975adaca1a314183bed27cdd971fc47bb3067f38
+SHA256: 88a279eaf1b2f40895d74211a7149a820eaa2694634f1b1222e3f600871a4a70
+SHA512: 3d69bfdaf044991b6e8e75e36721bfe554409f52a35eb4504548a0378dd1589c5c120eda04f93ca75ea5e4b60054dea53c7a1d44aded4104e3f8addd5daa0e17
+Description: pinned Kilix ONNX Runtime development candidate
+ Debian system-ONNX registration and SSE2 inference fixes.
 
 Package: plebian-archive-keyring
 Architecture: all
