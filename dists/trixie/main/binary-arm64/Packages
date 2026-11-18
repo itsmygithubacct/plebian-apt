@@ -22,19 +22,19 @@ Description: terminal engine for Kilix
 
 Package: kilix-multiplexer
 Architecture: arm64
-Version: 0.2.3+packaging3
+Version: 0.2.3+packaging5
 Priority: optional
 Section: x11
 Source: kilix
 Maintainer: itsmygithubacct <itsmygithubacct@users.noreply.github.com>
 Installed-Size: 403
 Depends: libkilix-encodec (>= 0.1.5), libc6 (>= 2.38), libsamplerate0 (>= 0.1.7), libssl3t64 (>= 3.0.0), libzstd1 (>= 1.5.5), zlib1g (>= 1:1.2.0)
-Filename: pool/main/k/kilix-multiplexer/kilix-multiplexer_0.2.3+packaging3_arm64.deb
-Size: 92156
-MD5sum: c755c695a06f92f5e0c4d9ce67e306d2
-SHA1: 6ebd1ee81e914a2019d579a3135b76038330d5fe
-SHA256: b49e5cf7e3c4596adb1628802e3a79d61e2ff5854ef1a546387b5e23053ed064
-SHA512: d2c4cea0e96c5c26f2dbb7f37414aa8b1a6fe710cb1ec0e70e74485bc314a6e0f3e1cd0f81f42622e506205e2a5748f1d169791a443f5a3e1a866b73a98590eb
+Filename: pool/main/k/kilix-multiplexer/kilix-multiplexer_0.2.3+packaging5_arm64.deb
+Size: 92032
+MD5sum: 1f161e924e13e9cf31b1f435d36a3294
+SHA1: f611bd9cee20706c35f9aa9e8f69239bdea6952f
+SHA256: d272d8d53b3775c768287f125e28f77135318458ea5111bc0099cc7c53ab5ba4
+SHA512: e630744b4bc25fcc4650679bb522bb75727921f62d0e6dc2f1f9207ecfff75f98734a5140df13a21eab0aee9247b4dfc2ffaa53759c2149088817230c295609a
 Homepage: https://github.com/itsmygithubacct/kilix
 Description: remote terminal programs for the Kilix terminal desktop
  The two programs behind "kilix remote": kmx-serve shares a Kilix pane over
@@ -48,19 +48,19 @@ Description: remote terminal programs for the Kilix terminal desktop
 
 Package: kilix-native
 Architecture: arm64
-Version: 0.2.3+packaging3
+Version: 0.2.3+packaging5
 Priority: optional
 Section: x11
 Source: kilix
 Maintainer: itsmygithubacct <itsmygithubacct@users.noreply.github.com>
 Installed-Size: 346
 Depends: libc6 (>= 2.38)
-Filename: pool/main/k/kilix-native/kilix-native_0.2.3+packaging3_arm64.deb
-Size: 70952
-MD5sum: e5e8a98470a7df9ec6756e7386d757cb
-SHA1: 079273cffc67ba76fa218705000b261778e845f4
-SHA256: c104456858fbc7f742a8cc0333efaa1e98fccb6f31b50af22638d8e52f62577a
-SHA512: 30e56c75f223784546fddad8ea2e7ffb93182f5528403d414da7a0fde5ed58811898428c34c9d62ea5b767e7ff8100c87bf82e747d90b78a9e29f922e684713a
+Filename: pool/main/k/kilix-native/kilix-native_0.2.3+packaging5_arm64.deb
+Size: 71588
+MD5sum: 045a6e9d5bf83b5bcf07c9259b2191da
+SHA1: 9810655c8dac530d8d04503270f059da15e2c985
+SHA256: 57cdad825b641b992731462450f900db8fab78cc3bc146c9de875bbfbe55ff86
+SHA512: 562c04c1fb0457b3d732cb66b41f4ca1666162d17ef5f4d3c49d57ffed047ebc0278cce950e5b01c71f2647f26aace2bfd97f9d99e48d3b9094c123bc34b9503
 Homepage: https://github.com/itsmygithubacct/kilix
 Description: compiled helpers for the Kilix terminal desktop
  Kilix builds a few small C programs for each user the first time they are
@@ -74,6 +74,33 @@ Description: compiled helpers for the Kilix terminal desktop
  .
  Everything is installed under /usr/lib/kilix/native. Nothing is added to
  PATH or to the system library path.
+
+Package: kilix
+Architecture: all
+Version: 0.2.3+packaging5
+Priority: optional
+Section: x11
+Maintainer: itsmygithubacct <itsmygithubacct@users.noreply.github.com>
+Installed-Size: 8751
+Depends: kilix-engine, kilix-native, python3, git, procps, util-linux
+Recommends: kilix-multiplexer
+Filename: pool/main/k/kilix/kilix_0.2.3+packaging5_all.deb
+Size: 2422840
+MD5sum: ccda21340142f0e823386033ccc0b537
+SHA1: 12beea3073cffcf0d438c1f58d5649f7a7ef2e92
+SHA256: 5e5042c35a7464450a50b004a8c4f0c9976b2e23265849924102115e022e7e6e
+SHA512: 3dc1be1c7ede7b3768c6b6b38b579ad7a27047643741bc8d202e309baae8066d86c8b80c3f0398aa1cdab53123bda1f3288ab9c6f633af8a45e1b4eea87d6064
+Homepage: https://github.com/itsmygithubacct/kilix
+Description: terminal desktop built on the Kilix engine
+ Kilix turns a GPU terminal into a small desktop: tabs and panes that outlive
+ the window, a settings panel, a file and application launcher, session
+ persistence and helpers for coding agents.
+ .
+ This package carries the launcher, its configuration, the built-in desktop
+ and the Python modules Kilix pins. It installs under /usr/share/kilix and
+ adds the command kilix. The terminal engine and the compiled helpers come
+ from kilix-engine and kilix-native. Per-user state stays under
+ ~/.local/gpu_terminal.
 
 Package: libkilix-encodec
 Architecture: arm64
