@@ -325,6 +325,27 @@ Description: read-aloud and dictation commands
  .
  The commands are in /usr/bin and the library is in /usr/lib/kilix-voice.
 
+Package: kilix-zell
+Architecture: all
+Version: 0.1.1+packaging2
+Priority: optional
+Section: games
+Maintainer: itsmygithubacct <itsmygithubacct@users.noreply.github.com>
+Installed-Size: 18
+Depends: neuronte, gcc, libc6-dev, make, zlib1g-dev, git, ca-certificates
+Filename: pool/main/k/kilix-zell/kilix-zell_0.1.1+packaging2_all.deb
+Size: 3584
+MD5sum: 4e73793a2eb191f9a85b9a2b3ab6f965
+SHA1: 740a42c0e0dc4f153fe374303000c8766d003184
+SHA256: 2cba499fca1a6acc858eb4fe42fbca2ade419254f481873d4e8df549e1625d84
+SHA512: 6ceb11c0c3e310e1c86efd3f67ae410c32ae8be77b487d0be0988eeb677818637bfb72f5ce5c70293cef2f9a047111bdcd9619a701b79257b5dfdd1712e221d5
+Homepage: https://github.com/itsmygithubacct/kilix-zell
+Description: Kilix Zell desktop runtime
+ The Neuronte desktop command for Kilix Zell. The command is built from
+ the published desktop sources when the package is configured. Packed
+ weight files stay outside this package. The package does not install
+ kilix-secretsd or a systemd unit.
+
 Package: kilix
 Architecture: all
 Version: 0.2.3+packaging6
