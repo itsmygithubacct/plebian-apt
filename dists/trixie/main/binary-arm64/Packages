@@ -526,6 +526,26 @@ Description: neural font library
  This package installs the shared library and a load probe. Packed weight
  files stay outside the package.
 
+Package: pleb-desktop
+Architecture: all
+Version: 0.2.3+packaging3
+Priority: optional
+Section: admin
+Source: plebian-os
+Maintainer: itsmygithubacct <itsmygithubacct@users.noreply.github.com>
+Installed-Size: 11
+Depends: kilix-multiplexer, plebian-desktop-base (= 0.2.3+packaging3)
+Filename: pool/main/p/pleb-desktop/pleb-desktop_0.2.3+packaging3_all.deb
+Size: 2908
+MD5sum: 835ad53333403b403e73a92746f04bda
+SHA1: 192e023d7284b54cd88b49bf8ea63867f7cec48c
+SHA256: 83ebba09d2dbb632e616feca0162555633dccd44fcb6c09414403ba2eaf050c0
+SHA512: 8976bd90b6834c5391ab565d84f9b7a2a0f919d2702c66321bcbd701ad64c79cd5e8d833680b99e8df28ace2231b653d4e9509a77cfca521a1910ad056462554
+Homepage: https://github.com/itsmygithubacct/plebian-os
+Description: Pleb desktop
+ The Pleb desktop. It depends on kilix-multiplexer and on
+ plebian-desktop-base.
+
 Package: pleb
 Architecture: arm64
 Version: 0.2.3+packaging1
@@ -572,23 +592,24 @@ Description: Plebian-OS archive signing key
 
 Package: plebian-desktop-base
 Architecture: all
-Version: 0.2.3+packaging2
+Version: 0.2.3+packaging3
 Priority: optional
 Section: admin
 Source: plebian-os
 Maintainer: itsmygithubacct <itsmygithubacct@users.noreply.github.com>
-Installed-Size: 1733
-Filename: pool/main/p/plebian-desktop-base/plebian-desktop-base_0.2.3+packaging2_all.deb
-Size: 1738564
-MD5sum: f7ba2b1cd9a9125a4355fa5ff72a1965
-SHA1: 945a7214f6f18017a7de114f23e9da21b3391aa9
-SHA256: 3da74677b340415732b503cdd8c7fb1c5b74a0dc68df32dcd1676bda0d3fcc99
-SHA512: 2d8aa0a1746c63661bcb3e86209ae71e7a35116b359b88150ef12c5c8647f8579152f49ab8cda7e21aa79d89942c0a6dbf84863d79b7453b26b5f87dcf5c5562
+Installed-Size: 1746
+Filename: pool/main/p/plebian-desktop-base/plebian-desktop-base_0.2.3+packaging3_all.deb
+Size: 1739488
+MD5sum: 5fedef78111d8419e9e0f48bc7f02d6f
+SHA1: a0ed926549f68b29dbf6470fcc74e39d5b2adc31
+SHA256: 87ba37bf68d22bbe632e52ca04005759698f08cc7a1bc708e13a37713667bed3
+SHA512: 962de224c764a80c4ca301a03c2969eb6873f6e034482c12cec7cf54a9f415f49cbd1fa8ec6398c8e75f043dee32e611cddce4d517337aa070fd7ca90508cad5
 Homepage: https://github.com/itsmygithubacct/plebian-os
 Description: Plebian-OS desktop artwork and login defaults
  The Plebian-OS wallpaper, the login greeter settings that use it, the
- attribution and licence notices for the artwork, and the apt pin for the
- qualified Qt GUI libraries.
+ attribution and licence notices for the artwork, the apt pin for the
+ qualified Qt GUI libraries, and the session, portal, application,
+ lid, console, and speaker drop-ins.
 
 Package: plebian-os-firstboot
 Architecture: all
@@ -649,6 +670,25 @@ Homepage: https://github.com/itsmygithubacct/plebian-os
 Description: Plebian-OS administration tools
  The release updater and its closure selector, and the root helpers that
  install and verify the optional runtimes of a Plebian-OS release.
+
+Package: task-pleb-desktop
+Architecture: all
+Version: 0.2.3+packaging3
+Priority: optional
+Section: admin
+Source: plebian-os
+Maintainer: itsmygithubacct <itsmygithubacct@users.noreply.github.com>
+Installed-Size: 11
+Depends: pleb-desktop (= 0.2.3+packaging3)
+Filename: pool/main/t/task-pleb-desktop/task-pleb-desktop_0.2.3+packaging3_all.deb
+Size: 2908
+MD5sum: 1717f9b9efbbdc886db362de4eb914b9
+SHA1: 89910487ad7af04456d56bcfd68ca97a0184f1c5
+SHA256: 2b7d7015d39f6d37f6478576786aee73008c5a6652b4139eeb6cdc4c86248422
+SHA512: ced0cc1ee176391298b60b905e71d84605678577a863c4a0db5f252db6c9667f61bd6e683d755dbd034c2b5ad12f9d5f54487bfe9c55650d21f30267d5c00548
+Homepage: https://github.com/itsmygithubacct/plebian-os
+Description: Pleb desktop task
+ The task package for the Pleb desktop. It depends on pleb-desktop.
 
 Package: tmux-cli
 Architecture: all
