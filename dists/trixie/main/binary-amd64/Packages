@@ -182,6 +182,26 @@ Description: plain requests to Kilix
  on first use. Catalog, tuning, transcript, and rollout libraries come
  from their own packages.
 
+Package: kilix-pdf
+Architecture: amd64
+Version: 0.1.0+packaging1
+Priority: optional
+Section: graphics
+Maintainer: itsmygithubacct <itsmygithubacct@users.noreply.github.com>
+Installed-Size: 98
+Depends: libc6 (>= 2.34), libcairo2 (>= 1.2.4), libglib2.0-0t64 (>= 2.58.0), libpoppler-glib8t64 (>= 0.18.0), zlib1g (>= 1:1.2.0)
+Filename: pool/main/k/kilix-pdf/kilix-pdf_0.1.0+packaging1_amd64.deb
+Size: 37152
+MD5sum: fa25a494cafeefeeb2e2c75e144f99f6
+SHA1: 4afb24372a5be3ff6972d3b9c8699385180d60b5
+SHA256: 38c256f642fe88aef386169b910c47339044dd3c3aa791153f6f0ccb09a4e547
+SHA512: 0b6eef332c374bfdb8f5f7b284fdb6745e063bfe787e1c956bd19e61e12e0b3ef0e04772cb3f732be2f2259810c8903d6592b1864ffd1e693b3b5c6dbe4f8172
+Homepage: https://github.com/itsmygithubacct/kilix-pdf
+Description: PDF viewer
+ kilix-pdf opens a PDF in its own viewer. This package installs
+ kilix-pdf-viewer and kilix-pdf-core under /usr/bin.
+ The core reports its version with --probe.
+
 Package: kilix-secrets
 Architecture: amd64
 Version: 0.1.0+packaging1
