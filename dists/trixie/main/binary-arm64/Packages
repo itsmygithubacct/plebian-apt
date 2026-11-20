@@ -572,22 +572,23 @@ Description: Plebian-OS archive signing key
 
 Package: plebian-desktop-base
 Architecture: all
-Version: 0.2.3+packaging1
+Version: 0.2.3+packaging2
 Priority: optional
 Section: admin
 Source: plebian-os
 Maintainer: itsmygithubacct <itsmygithubacct@users.noreply.github.com>
-Installed-Size: 1730
-Filename: pool/main/p/plebian-desktop-base/plebian-desktop-base_0.2.3+packaging1_all.deb
-Size: 1738312
-MD5sum: 69a52774f97f0219ad838e61d222444c
-SHA1: 0050f9677dbe9bdecd93917201690c9f84f009e9
-SHA256: 60a4c767c1a547f804c4fd720aa3f9c903328f061b0ccc1da6f547f69aa7f49d
-SHA512: 3842764795113ec1d16fff1d09f0895fd3f5334eb9301b16cccfa254b09b799fb1a4578c0e71f1d2c0031a8571ac96bc28c0cbc251ae691f2f0ac840ac353c90
+Installed-Size: 1733
+Filename: pool/main/p/plebian-desktop-base/plebian-desktop-base_0.2.3+packaging2_all.deb
+Size: 1738564
+MD5sum: f7ba2b1cd9a9125a4355fa5ff72a1965
+SHA1: 945a7214f6f18017a7de114f23e9da21b3391aa9
+SHA256: 3da74677b340415732b503cdd8c7fb1c5b74a0dc68df32dcd1676bda0d3fcc99
+SHA512: 2d8aa0a1746c63661bcb3e86209ae71e7a35116b359b88150ef12c5c8647f8579152f49ab8cda7e21aa79d89942c0a6dbf84863d79b7453b26b5f87dcf5c5562
 Homepage: https://github.com/itsmygithubacct/plebian-os
 Description: Plebian-OS desktop artwork and login defaults
- The Plebian-OS wallpaper, the login greeter settings that use it, and the
- attribution and licence notices for the artwork.
+ The Plebian-OS wallpaper, the login greeter settings that use it, the
+ attribution and licence notices for the artwork, and the apt pin for the
+ qualified Qt GUI libraries.
 
 Package: plebian-os-firstboot
 Architecture: all
