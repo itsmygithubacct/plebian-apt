@@ -3,12 +3,9 @@
 The apt repository for [Plebian-OS](https://github.com/itsmygithubacct/plebian-os)
 packages. The repository itself is served from the `gh-pages` branch.
 
-**Status: preview.** It carries the first packaged build of the Plebian-OS core
-(`0.2.3+packaging1`), published for testing ahead of the 0.2.4 release.
-Installing these packages on a machine does not by itself turn it into
-Plebian-OS, and the first-boot unit is not enabled by installing them.
-
-Debian 13 (trixie), `amd64` and `arm64`.
+This preview serves Plebian-OS and Kilix packages for Debian 13 (`trixie`)
+on amd64 and arm64 during 0.2.4 development. The OS installer enables
+first-boot provisioning when it sets up a Plebian-OS system.
 
 ## Use
 
@@ -27,7 +24,7 @@ The `plebian-archive-keyring` package owns the key file from then on.
 
 Kilix `0.2.3+packaging7` recognizes the system EnCodec converters for new
 users on amd64 and arm64. The signed `UNRELEASED` suite carries this package.
-Keep the `trixie` entry above for its dependencies. To select the preview:
+Keep the `trixie` entry above for its dependencies and select Kilix by version.
 
 ```sh
 echo 'deb [signed-by=/usr/share/keyrings/plebian-archive-keyring.gpg] https://itsmygithubacct.github.io/plebian-apt UNRELEASED main' \\
@@ -37,7 +34,7 @@ sudo apt install kilix=0.2.3+packaging7
 ```
 
 The preview carries `NotAutomatic: yes`. The 0.2.4 installer selects the
-package by its exact size and SHA-256.
+package by its exact size and SHA-256. [Kilix packaging7 source](https://github.com/itsmygithubacct/kilix/tree/711deb5b4341ab159ccce26011df63f349995394/debian)
 
 When rebuilding the `trixie` Pages tree, generate its indexes from its own
 packages first. Then run `tools/preserve-unreleased GH_PAGES_CHECKOUT REBUILT_PAGES`
