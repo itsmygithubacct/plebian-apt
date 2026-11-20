@@ -1,0 +1,38 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+Architectures: amd64 arm64
+Codename: UNRELEASED
+Components: main
+Date: Fri, 20 Nov 2026 23:14:37 +0000
+Label: Plebian-OS
+NotAutomatic: yes
+Origin: Plebian-OS
+Suite: UNRELEASED
+MD5Sum:
+ 8aef1aee798f736f8ea1b5a164b27aa2             1273 main/binary-amd64/Packages
+ 4001b5b8702f90c0281f748e83394ff0              779 main/binary-amd64/Packages.gz
+ 8aef1aee798f736f8ea1b5a164b27aa2             1273 main/binary-arm64/Packages
+ 4001b5b8702f90c0281f748e83394ff0              779 main/binary-arm64/Packages.gz
+SHA1:
+ 596fa98a3ce3d75ffe4e286a04541ff8a53ce14d             1273 main/binary-amd64/Packages
+ 8aa71e6023d65cd0eb276899f7baace2a47e14de              779 main/binary-amd64/Packages.gz
+ 596fa98a3ce3d75ffe4e286a04541ff8a53ce14d             1273 main/binary-arm64/Packages
+ 8aa71e6023d65cd0eb276899f7baace2a47e14de              779 main/binary-arm64/Packages.gz
+SHA256:
+ 3ba4a718b1c59654b9ae3e893390757ad15930c1ee1fb61a9fcd51247575730b             1273 main/binary-amd64/Packages
+ f9a27ca3738a717b3e7036457f0d2e0a69f7abd1b28d7a10699a4770508d260d              779 main/binary-amd64/Packages.gz
+ 3ba4a718b1c59654b9ae3e893390757ad15930c1ee1fb61a9fcd51247575730b             1273 main/binary-arm64/Packages
+ f9a27ca3738a717b3e7036457f0d2e0a69f7abd1b28d7a10699a4770508d260d              779 main/binary-arm64/Packages.gz
+SHA512:
+ 939ee74295c73b1b6e63e823ea40d55e8afbe916ebbc8eb60bb3f1e79f6981ed482bdbd6b8d70a30900eb0d613b35a3bd45ec0240d6a85b044c6d7ea37dfad33             1273 main/binary-amd64/Packages
+ 8830e4557ef2c27d9c1d229313021c11e38956c11a3faa31445196a9c089264aac422ad077998057ad2bb0e683fc9de5231431e93f8cd3c41cc172cbe005290f              779 main/binary-amd64/Packages.gz
+ 939ee74295c73b1b6e63e823ea40d55e8afbe916ebbc8eb60bb3f1e79f6981ed482bdbd6b8d70a30900eb0d613b35a3bd45ec0240d6a85b044c6d7ea37dfad33             1273 main/binary-arm64/Packages
+ 8830e4557ef2c27d9c1d229313021c11e38956c11a3faa31445196a9c089264aac422ad077998057ad2bb0e683fc9de5231431e93f8cd3c41cc172cbe005290f              779 main/binary-arm64/Packages.gz
+-----BEGIN PGP SIGNATURE-----
+
+iHUEARYKAB0WIQSib7VV/ZBFd8nquMeXj286pkoe8gUCawDUXQAKCRCXj286pkoe
+8hSDAQD82DUn9MUoGHV4GhXceD/7Sd1ef/0l2p1TAgD5Bsf/bgD+O1LCKqzzvZtR
+0PTtIPnZdvYEj7emWdvkdIFK1eWG2g0=
+=1Mik
+-----END PGP SIGNATURE-----
