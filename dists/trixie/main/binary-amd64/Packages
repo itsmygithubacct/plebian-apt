@@ -529,6 +529,61 @@ SHA512: 426e7e087ea59a3fd978848c04f82ebf9116536b1d78bc9ed65e5fa20c0f931b55c87a65
 Description: pinned Kilix ONNX Runtime development candidate
  Debian system-ONNX registration and SSE2 inference fixes.
 
+Package: libqt5gui5t64
+Architecture: amd64
+Version: 5.15.15+dfsg-6+deb13u1+plebianrc6.2
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: qtbase-opensource-src
+Maintainer: itsmygithubacct <itsmygithubacct@users.noreply.github.com>
+Installed-Size: 12351
+Provides: libqt5gui5 (= 5.15.15+dfsg-6+deb13u1+plebianrc6.1)
+Depends: fontconfig, libc6 (>= 2.38), libdrm2 (>= 2.4.62), libegl1, libfontconfig1 (>= 2.12.6), libfreetype6 (>= 2.6), libgbm1 (>= 8.1~0), libgcc-s1 (>= 3.4), libgl1, libglib2.0-0t64 (>= 2.12.0), libharfbuzz0b (>= 1.6.0), libice6 (>= 1:1.0.0), libinput10 (>= 0.15.0), libjpeg62-turbo (>= 1.3.1), libmd4c0 (>= 0.2.7), libmtdev1t64 (>= 1.0.8), libpng16-16t64 (>= 1.6.46), libqt5core5t64 (>= 5.15.15), libqt5dbus5t64 (>= 5.14.1), libqt5network5t64 (>= 5.0.2), libsm6 (>= 2:1.2.6), libstdc++6 (>= 11), libts0t64 (>= 1.15), libudev1 (>= 183), libx11-6, libx11-xcb1, libxcb-glx0, libxcb-icccm4 (>= 0.4.2), libxcb-image0 (>= 0.2.1), libxcb-keysyms1 (>= 0.4.1), libxcb-randr0 (>= 1.3), libxcb-render-util0, libxcb-render0, libxcb-res0 (>= 1.10), libxcb-shape0, libxcb-shm0 (>= 1.10), libxcb-sync1, libxcb-xfixes0, libxcb-xinerama0, libxcb-xinput0 (>= 1.17.0), libxcb-xkb1, libxcb1 (>= 1.8), libxkbcommon-x11-0 (>= 0.5.0), libxkbcommon0 (>= 0.5.0), libxrender1 (>= 1:0.9.12), qtbase-abi-5-15-15, zlib1g (>= 1:1.1.4)
+Recommends: libqt5svg5, qt5-gtk-platformtheme, qtwayland5
+Suggests: qgnomeplatform-qt5, qt5-image-formats-plugins
+Conflicts: libqt5gui5-gles
+Breaks: libqt5gui5 (<< 5.15.15+dfsg-6+deb13u1+plebianrc6.1)
+Replaces: libqt5gui5
+Filename: pool/main/l/libqt5gui5t64/libqt5gui5t64_5.15.15+dfsg-6+deb13u1+plebianrc6.2_amd64.deb
+Size: 13220032
+MD5sum: 4d7e26bf934a787d761e789ce31f9ebb
+SHA1: 20e0ffe783edd19cb420b5917f4e0460f9630014
+SHA256: 24f5244052e3b655aa5b856e6bc0fb78a494c610ec42e890bde5e79129b0ab16
+SHA512: cea567fa81ea671f570412499619b0e711ec8dff900b22ed511bb7c646cd0c0e7e4a125c4e86f3ef942762227476d2ae88c1cd49883f467fe21feddea8bb6d0c
+Homepage: https://www.qt.io/developers/
+Description: Qt 5 GUI module
+ Qt is a cross-platform C++ application framework. Qt's primary feature
+ is its rich set of widgets that provide standard GUI functionality.
+ .
+ The QtGui module extends QtCore with GUI functionality.
+
+Package: libqt6gui6
+Architecture: amd64
+Version: 6.8.2+dfsg-9+deb13u2+plebianrc6.2
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: qt6-base
+Maintainer: itsmygithubacct <itsmygithubacct@users.noreply.github.com>
+Installed-Size: 10659
+Depends: fontconfig, libc6 (>= 2.38), libdrm2 (>= 2.4.62), libegl1, libfontconfig1 (>= 2.12.6), libfreetype6 (>= 2.11.1), libgcc-s1 (>= 3.0), libglib2.0-0t64 (>= 2.26.0), libglx0, libharfbuzz0b (>= 2.1.1), libice6 (>= 1:1.0.0), libinput10 (>= 1.19.1), libjpeg62-turbo (>= 1.3.1), libmd4c0 (>= 0.2.7), libmtdev1t64 (>= 1.0.8), libopengl0, libpng16-16t64 (>= 1.6.46), libqt6core6t64 (>= 6.8.2), libqt6dbus6 (>= 6.8.2), libsm6 (>= 2:1.2.6), libstdc++6 (>= 12), libts0t64 (>= 1.15), libudev1 (>= 183), libx11-6, libx11-xcb1, libxcb-cursor0 (>= 0.0.99), libxcb-glx0, libxcb-icccm4 (>= 0.4.2), libxcb-image0 (>= 0.2.1), libxcb-keysyms1 (>= 0.4.1), libxcb-randr0 (>= 1.12), libxcb-render-util0, libxcb-render0, libxcb-res0 (>= 1.10), libxcb-shape0, libxcb-shm0 (>= 1.10), libxcb-sync1, libxcb-xfixes0, libxcb-xinput0 (>= 1.17.0), libxcb-xkb1, libxcb1 (>= 1.8), libxkbcommon-x11-0 (>= 0.5.0), libxkbcommon0 (>= 0.5.0), qt6-base-private-abi (= 6.8.2), zlib1g (>= 1:1.1.4)
+Recommends: qt6-gtk-platformtheme, qt6-qpa-plugins, qt6-svg-plugins, qt6-wayland
+Breaks: libqt6gui6t64 (<< 6.8.2+dfsg-9+deb13u2+plebianrc6.1), qt6-qpa-plugins (<< 6.3.1+dfsg-6~)
+Replaces: libqt6gui6t64, qt6-qpa-plugins (<< 6.3.1+dfsg-6~)
+Filename: pool/main/l/libqt6gui6/libqt6gui6_6.8.2+dfsg-9+deb13u2+plebianrc6.2_amd64.deb
+Size: 11520192
+MD5sum: 030f954a37f1d8cdd62b1f863c192cb4
+SHA1: 4058b7313c34e9d2af6a8fd7e4720b2714c3db3d
+SHA256: 14e5a9c1f37d5efe579d6c990c4eeadd1118d278a9b84f62ece9103c66616cc8
+SHA512: 57f9fe1eca17926737b6c49a51dccc5929aca63487a7028839c9d332e325e906ff806c29976dc22780abb7d0930246479c28809ee0fd17ff6939cdb0507579e0
+Homepage: https://www.qt.io/developers/
+Description: Qt 6 GUI module
+ Qt is a cross-platform C++ application framework. Qt's primary feature
+ is its rich set of widgets that provide standard GUI functionality.
+ .
+ The QtGui module extends QtCore with GUI functionality.
+
 Package: neuronte
 Architecture: amd64
 Version: 2.1.0+packaging1
@@ -551,19 +606,19 @@ Description: neural font library
 
 Package: pleb-desktop
 Architecture: all
-Version: 0.2.3+packaging3
+Version: 0.2.3+packaging4
 Priority: optional
 Section: admin
 Source: plebian-os
 Maintainer: itsmygithubacct <itsmygithubacct@users.noreply.github.com>
 Installed-Size: 11
-Depends: kilix-multiplexer, plebian-desktop-base (= 0.2.3+packaging3)
-Filename: pool/main/p/pleb-desktop/pleb-desktop_0.2.3+packaging3_all.deb
-Size: 2908
-MD5sum: 835ad53333403b403e73a92746f04bda
-SHA1: 192e023d7284b54cd88b49bf8ea63867f7cec48c
-SHA256: 83ebba09d2dbb632e616feca0162555633dccd44fcb6c09414403ba2eaf050c0
-SHA512: 8976bd90b6834c5391ab565d84f9b7a2a0f919d2702c66321bcbd701ad64c79cd5e8d833680b99e8df28ace2231b653d4e9509a77cfca521a1910ad056462554
+Depends: kilix-multiplexer, plebian-desktop-base (= 0.2.3+packaging4)
+Filename: pool/main/p/pleb-desktop/pleb-desktop_0.2.3+packaging4_all.deb
+Size: 2936
+MD5sum: 96904758919880462d855d6646731ccc
+SHA1: cc0060a577f9102b6b32997b22728c52453cbcc8
+SHA256: c01d303721e69628ac48bdb2600e9412a13dd844f64e9e08be4d1a9edab1aeac
+SHA512: 0f8da78f10d1108b33ab4f0956f15b62bb251ffe2956f2968cf939661a2934eb29128d60c278bfb5267db04940145ae364397fa4e2631adf70965a3f982d6747
 Homepage: https://github.com/itsmygithubacct/plebian-os
 Description: Pleb desktop
  The Pleb desktop. It depends on kilix-multiplexer and on
@@ -615,18 +670,18 @@ Description: Plebian-OS archive signing key
 
 Package: plebian-desktop-base
 Architecture: all
-Version: 0.2.3+packaging3
+Version: 0.2.3+packaging4
 Priority: optional
 Section: admin
 Source: plebian-os
 Maintainer: itsmygithubacct <itsmygithubacct@users.noreply.github.com>
 Installed-Size: 1746
-Filename: pool/main/p/plebian-desktop-base/plebian-desktop-base_0.2.3+packaging3_all.deb
-Size: 1739488
-MD5sum: 5fedef78111d8419e9e0f48bc7f02d6f
-SHA1: a0ed926549f68b29dbf6470fcc74e39d5b2adc31
-SHA256: 87ba37bf68d22bbe632e52ca04005759698f08cc7a1bc708e13a37713667bed3
-SHA512: 962de224c764a80c4ca301a03c2969eb6873f6e034482c12cec7cf54a9f415f49cbd1fa8ec6398c8e75f043dee32e611cddce4d517337aa070fd7ca90508cad5
+Filename: pool/main/p/plebian-desktop-base/plebian-desktop-base_0.2.3+packaging4_all.deb
+Size: 1739504
+MD5sum: 360a4c782d55a1074999fa568b11be99
+SHA1: f66fcfdacfbea4036ee2d2c891921304abd41391
+SHA256: 1bf078a51e31beec298f26053352fc681363c279bcd96ac2a4e660d31d242e93
+SHA512: 88876fcd5d1cd2a7474e77e0ef835dc98b464b4f34caee6410c48fc5f26c0da266e4e781f566b19a5542e41789e03043417c12ed873322405555e84299b7ea76
 Homepage: https://github.com/itsmygithubacct/plebian-os
 Description: Plebian-OS desktop artwork and login defaults
  The Plebian-OS wallpaper, the login greeter settings that use it, the
@@ -696,19 +751,19 @@ Description: Plebian-OS administration tools
 
 Package: task-pleb-desktop
 Architecture: all
-Version: 0.2.3+packaging3
+Version: 0.2.3+packaging4
 Priority: optional
 Section: admin
 Source: plebian-os
 Maintainer: itsmygithubacct <itsmygithubacct@users.noreply.github.com>
 Installed-Size: 11
-Depends: pleb-desktop (= 0.2.3+packaging3)
-Filename: pool/main/t/task-pleb-desktop/task-pleb-desktop_0.2.3+packaging3_all.deb
-Size: 2908
-MD5sum: 1717f9b9efbbdc886db362de4eb914b9
-SHA1: 89910487ad7af04456d56bcfd68ca97a0184f1c5
-SHA256: 2b7d7015d39f6d37f6478576786aee73008c5a6652b4139eeb6cdc4c86248422
-SHA512: ced0cc1ee176391298b60b905e71d84605678577a863c4a0db5f252db6c9667f61bd6e683d755dbd034c2b5ad12f9d5f54487bfe9c55650d21f30267d5c00548
+Depends: pleb-desktop (= 0.2.3+packaging4)
+Filename: pool/main/t/task-pleb-desktop/task-pleb-desktop_0.2.3+packaging4_all.deb
+Size: 2928
+MD5sum: 3dfe9add6b020c0e2e01c68128bfad39
+SHA1: dd2ea02a69ffe3890ebd0f048cde424a2e02abef
+SHA256: 937dfb0527d9bc2703e89092dccc3110ca46a589326238256978807da05c5337
+SHA512: 73fc661d89b53da9afe6e878d5828f5ac7e25da57ba066377d7c93e429cde50ecd83f3ac382d490de54ff159566ff7c7e86100d83500f69bb53ac585f141b05b
 Homepage: https://github.com/itsmygithubacct/plebian-os
 Description: Pleb desktop task
  The task package for the Pleb desktop. It depends on pleb-desktop.
