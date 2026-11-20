@@ -166,6 +166,21 @@ Description: small tool-model library
  Domain packs and the runtime live under /usr/share/kilix-ml. Training
  weights are not included.
 
+Package: kilix-mpv
+Architecture: arm64
+Version: 0.40.0+kilix.7
+Priority: optional
+Section: video
+Maintainer: itsmygithubacct <itsmygithubacct@users.noreply.github.com>
+Depends: python3, libass9 (>= 1:0.17.3), libavcodec61 (>= 7:7.1.5), libavfilter10 (>= 7:7.1.5), libavformat61 (>= 7:7.1.5), libavutil59 (>= 7:7.1.5), libc6 (>= 2.38), libluajit-5.1-2 (>= 2.1.0+openresty20250117), libplacebo349 (>= 7.349.0), libpulse0 (>= 0.99.4), libswresample5 (>= 7:7.1.5), libswscale8 (>= 7:7.1.5), zlib1g (>= 1:1.2.0)
+Filename: pool/main/k/kilix-mpv/kilix-mpv_0.40.0+kilix.7_arm64.deb
+Size: 801140
+MD5sum: b13fc901c68025d5e441de46e2437419
+SHA1: dae4e27b0418c2bd6492c6e02ab1345bff577118
+SHA256: 39f6ca576047289701b3b13420db1480bee5c67540c7d5af1ba5bcc25e041b2e
+SHA512: 8da1b77f7fa65d9fa5c12d336d5e7a93e8601fa8cb7895f8e811a9a3de14b46ae5372a9ef8388a9025516b9c0e01cd7f98a4fc9b175934f1eaaf5e898e7b63e8
+Description: Kilix terminal media player
+
 Package: kilix-multiplexer
 Architecture: arm64
 Version: 0.2.3+packaging5

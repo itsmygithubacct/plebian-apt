@@ -186,6 +186,24 @@ Description: small tool-model library
  Domain packs and the runtime live under /usr/share/kilix-ml. Training
  weights are not included.
 
+Package: kilix-mpv
+Architecture: amd64
+Version: 0.40.0+kilix.7
+Priority: optional
+Section: video
+Maintainer: itsmygithubacct <itsmygithubacct@users.noreply.github.com>
+Depends: python3, libass9 (>= 1:0.15.0), libavcodec61 (>= 7:7.1.5), libavfilter10 (>= 7:7.1.5), libavformat61 (>= 7:7.1.5), libavutil59 (>= 7:7.1.5), libc6 (>= 2.38), libluajit-5.1-2 (>= 2.0.4) | libluajit-5.1-2 (>= 2.1.0+openresty), libplacebo349 (>= 7.349.0), libpulse0 (>= 0.99.4), libswresample5 (>= 7:7.1.5), libswscale8 (>= 7:7.1.5), zlib1g (>= 1:1.2.0)
+Filename: pool/main/k/kilix-mpv/kilix-mpv_0.40.0+kilix.7_amd64.deb
+Size: 878628
+MD5sum: db0a2edd77ec9484502df8aee2c82bf9
+SHA1: 632b656be31972a91268883a6f20275f7eb73036
+SHA256: 4b62dc8deca92d5b7a3bea80bd2a48b3c7ad9fc8f17fa73846a2c814ee10cb5a
+SHA512: 826a47e5b8e6392b2f6827a617065d5ac673eb3f7a86fc8c5905318a404ef9cb477a0e9ea7d4d48401e81303d2cb38eeec42ad676a6efcd8abaa3da3f9003434
+Description: Kilix terminal media player based on mpv
+ Separately named player with lossless adaptive terminal transport,
+ bounded shared memory, and terminal input and resize fixes. Includes the
+ kilix-video launcher with persistent diagnostics and terminal recovery.
+
 Package: kilix-multiplexer
 Architecture: amd64
 Version: 0.2.3+packaging5
