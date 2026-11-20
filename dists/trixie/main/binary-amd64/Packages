@@ -164,6 +164,29 @@ Description: Kilix terminal utilities
  Terminal tools for files, the system, sessions, and the small desktop
  centers. Each command runs the copy installed under /usr/share/kilix-tui-utils.
 
+Package: kilix-voice
+Architecture: all
+Version: 0.1.6+packaging1
+Priority: optional
+Section: sound
+Maintainer: itsmygithubacct <itsmygithubacct@users.noreply.github.com>
+Installed-Size: 856
+Depends: python3, espeak-ng
+Filename: pool/main/k/kilix-voice/kilix-voice_0.1.6+packaging1_all.deb
+Size: 190152
+MD5sum: 3b7897bcf547b0a462b625bf4259f846
+SHA1: 36cd476927dec40872104773cfb6a71439670b03
+SHA256: 0cd2195ccaee0c82b837a6efdd044c9cc3eec9f8b7ec5527edd67e17932fdc27
+SHA512: 1c71dc45566ce6091fdb7ccc0a1ee97220223654ccd3dc5fc220629e9d9715b1d60c654a950b155915ff714b6f171d074e773dd81f33d6ac90da6c8f202128f3
+Homepage: https://github.com/itsmygithubacct/kilix-voice
+Description: read-aloud and dictation commands
+ Kilix Voice speaks text and can take dictation. This package installs
+ kilix-tts, kilix-stt and kilix-voiced, plus the library they import.
+ Read-aloud uses espeak-ng. Dictation models are not included; they stay
+ a first-use download.
+ .
+ The commands are in /usr/bin and the library is in /usr/lib/kilix-voice.
+
 Package: kilix
 Architecture: all
 Version: 0.2.3+packaging6
