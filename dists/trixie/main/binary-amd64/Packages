@@ -100,6 +100,29 @@ Description: compiled helpers for the Kilix terminal desktop
  Everything is installed under /usr/lib/kilix/native. Nothing is added to
  PATH or to the system library path.
 
+Package: kilix-secrets
+Architecture: amd64
+Version: 0.1.0+packaging1
+Priority: optional
+Section: utils
+Maintainer: itsmygithubacct <itsmygithubacct@users.noreply.github.com>
+Installed-Size: 192
+Depends: libkilix-secrets0 (= 0.1.0+packaging1), libc6 (>= 2.38), libsodium23 (>= 1.0.12), libsystemd0 (>= 237), init-system-helpers (>= 1.52)
+Filename: pool/main/k/kilix-secrets/kilix-secrets_0.1.0+packaging1_amd64.deb
+Size: 65380
+MD5sum: 692fcf4387cfe926570e514d47d28b35
+SHA1: 224eed0f8886f95ced380441622e32724e20fab1
+SHA256: 75c71c7f205da26301eff2e66ed8a83e3274677f3eb0e391e53a79563d0096aa
+SHA512: 82185c6b697a1981dde4ba7a45576e508a7c3795a7df33152005259d0983fb02a8b6e5ab6539b735f9ea12960193ccf166c855ebcd72d2de5c9145176e2daf78
+Homepage: https://github.com/itsmygithubacct/kilix-secrets
+Description: per-user credential vault for Kilix
+ Kilix Secrets is a per-user daemon and an administrative CLI for encrypted
+ local credentials. The daemon is socket-activated from the user session.
+ Vault files stay under ~/.local/share/kilix-secrets.
+ .
+ The client library is libkilix-secrets0. Headers are in
+ libkilix-secrets-dev.
+
 Package: kilix
 Architecture: all
 Version: 0.2.3+packaging6
@@ -142,6 +165,51 @@ SHA256: 217ac761a022067deedf993aabdc11219358fe5eacdea6a66eb8bab13bee4bed
 SHA512: 4c88b8a9ac0512aac446a9c6edd64d65255c1df4700b7de7c3314dde36981970bbefb80b6248dd3c32ee527eb2eddd5a6d5754666d54261851ba7943a76e37a4
 Description: Shared Kilix codec and installed-content admission
  No model payload or model authorization is included.
+
+Package: libkilix-secrets-dev
+Architecture: amd64
+Version: 0.1.0+packaging1
+Priority: optional
+Section: libdevel
+Source: kilix-secrets
+Maintainer: itsmygithubacct <itsmygithubacct@users.noreply.github.com>
+Installed-Size: 143
+Depends: libkilix-secrets0 (= 0.1.0+packaging1)
+Breaks: kilix-secrets (<< 0.1.0+packaging1)
+Replaces: kilix-secrets (<< 0.1.0+packaging1)
+Filename: pool/main/l/libkilix-secrets-dev/libkilix-secrets-dev_0.1.0+packaging1_amd64.deb
+Size: 38660
+MD5sum: 2cd03c57ae6320e4aeaa97552ba52963
+SHA1: eb4f5db799c58b13463f843b5b14d03bf87cd996
+SHA256: 2b810350798b59ff650ded83717576f340f1eab3450b9ab68c583be4a29f79b7
+SHA512: 374736a45ba7c1132768bc791190b47ff4704b0d35f77c686a6e1e602837e8f4f1942af82311e701642b2d7dcb181497d43fa0328b3cba892ec1372c3d331c9a
+Homepage: https://github.com/itsmygithubacct/kilix-secrets
+Description: development files for the Kilix Secrets client library
+ Header, static library and pkg-config file for building against
+ libkilix-secrets0.
+
+Package: libkilix-secrets0
+Architecture: amd64
+Version: 0.1.0+packaging1
+Priority: optional
+Section: libs
+Source: kilix-secrets
+Maintainer: itsmygithubacct <itsmygithubacct@users.noreply.github.com>
+Installed-Size: 99
+Depends: libc6 (>= 2.38), libsodium23 (>= 1.0.12)
+Breaks: kilix-secrets (<< 0.1.0+packaging1)
+Replaces: kilix-secrets (<< 0.1.0+packaging1)
+Filename: pool/main/l/libkilix-secrets0/libkilix-secrets0_0.1.0+packaging1_amd64.deb
+Size: 36112
+MD5sum: 68acc1d94c0dbc9e5f8ae8fdb246cfd7
+SHA1: 866ca076606efa8be0e99a3bf566fb9f6eb14905
+SHA256: 65370c5ae5cd1ab5cab9514f79a796ebb976fc5810f7bac264618f98ec9535e8
+SHA512: 77f087e6265c5c29c110ffc91153ba1996cedcad194565c0af146bdc9918f2dcb41f1238d2d2fc7eb0551dac194aeed208c408ccce0e569ed350517bff99e2b9
+Homepage: https://github.com/itsmygithubacct/kilix-secrets
+Description: client library for the Kilix Secrets vault
+ Shared library for programs that ask the per-user Kilix Secrets daemon for
+ credentials. The daemon keeps the encrypted store; this library is the
+ client.
 
 Package: libonnxruntime-dev
 Architecture: amd64
