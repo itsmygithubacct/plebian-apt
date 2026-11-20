@@ -4,34 +4,34 @@ Hash: SHA512
 Architectures: amd64 arm64
 Codename: trixie
 Components: main
-Date: Fri, 20 Nov 2026 05:59:16 +0000
+Date: Fri, 20 Nov 2026 06:06:49 +0000
 Label: Plebian-OS
 Origin: Plebian-OS
 Suite: trixie
 MD5Sum:
- b2f1c49d3c33c7cd8efe145a7de0d50f            18705 main/binary-amd64/Packages
- bca5514d6c331371a7d66c3d566a5abb             6891 main/binary-amd64/Packages.gz
- 234b5b9a3e698818a0cc79b9b083d29f            18705 main/binary-arm64/Packages
- d598a161126cbdd8818f7053005fc28a             6894 main/binary-arm64/Packages.gz
+ b18afa95015712ef509dfe3f424659cc            20496 main/binary-amd64/Packages
+ ff18266ff7f21b07238b0bfee8a34cde             7497 main/binary-amd64/Packages.gz
+ 75eaacc4d674a57921ef9c13de895828            20496 main/binary-arm64/Packages
+ b156a66e5100e729cd5a84276ab3188f             7505 main/binary-arm64/Packages.gz
 SHA1:
- e16e792f1839a6d2818f887edbada93745909dfe            18705 main/binary-amd64/Packages
- 78e721f2d3195ec932dc8091316452a86ccdb30c             6891 main/binary-amd64/Packages.gz
- b1fd529dc1b6f54433d88d613f54f5955c5666cf            18705 main/binary-arm64/Packages
- db988fa256af3c3e1db7ffdd32852d5307d4ac31             6894 main/binary-arm64/Packages.gz
+ 0fa24be4760e5e51495e3b8f025be287db034dd1            20496 main/binary-amd64/Packages
+ a72c1065b72d4b13a4dbc9cb1cc7ede9a42595a1             7497 main/binary-amd64/Packages.gz
+ 56af22b09c75e7a5fc5f19f2ace1c3d544f524d5            20496 main/binary-arm64/Packages
+ 3188aa8a86e258c9e171cf688b328f0533e8036c             7505 main/binary-arm64/Packages.gz
 SHA256:
- 269841f8c37ea096468b3e399c14e582c8351f6f2487b6292a2ca64724377210            18705 main/binary-amd64/Packages
- 6aca2c6f209f17ff2475dbf39701122c87fd2d35d57f3b2552854f37874148f7             6891 main/binary-amd64/Packages.gz
- e9243891d3c4ddca72d1e2241c683ccb942e6fd3fa13920a1c73ab1cab002d9d            18705 main/binary-arm64/Packages
- 1dc5aba932ade01551958feb873ff0bdcfe37fd0fb7dae7a7136648a9aea8e02             6894 main/binary-arm64/Packages.gz
+ 23dceb6a3b66d97152f435a445ca38c89541d994e8d1713799dd531726ec64c4            20496 main/binary-amd64/Packages
+ 45f7a172d56253d5e6810f2720e2a5bf86c00bedb8b782827841424e5f78ce37             7497 main/binary-amd64/Packages.gz
+ b864218cf0c37160ee57349a227ef3bb379ba5d1700cab72977e1426706faf14            20496 main/binary-arm64/Packages
+ cfaa1c43e618ce3587e3626a08df5494d6db87767697b44b6c65a2df12354078             7505 main/binary-arm64/Packages.gz
 SHA512:
- 8e14166de2335db01dde618d052179b481be5b517f50bb6bfef964f8b9f1ce104e4fb2dfb07fafb5e013cfdee65dbef9fd0cc1462d7b137450e3aff45a472afd            18705 main/binary-amd64/Packages
- 16fb7f4a6ab4e32e41c96e24416c427c14c06a0fbc898f45b3d2fdfe58b00bfeb407afbc39771c0f7f7ed93c65e31238dfb725a43076395e3a7c22d92b40e9b8             6891 main/binary-amd64/Packages.gz
- eb4f4e9c78af262d4003c31f103a2e6f1f64d4a6e199adfbcc675aea70ccab08cd98e247501113b6c4ece8f0ef4b3309b67a508e62a2bfc0a21be63b70cc0c56            18705 main/binary-arm64/Packages
- 37397a8b477012532c15f25835b6f670cb2fa63a6276205599f2b6cf3c250e4c048d530608784b1989ebcd058a65546ef01c10ed0d8f1fc1b7c92ee648d48baf             6894 main/binary-arm64/Packages.gz
+ 6acc5dcf65a6434578cf2462a2acf0daabffc514565614902adced20225fb492d7dc4a6808c3a3ac22d84cbc41978c7c41b0efdab85bf76ccd8be9b5dcff8df6            20496 main/binary-amd64/Packages
+ e9cc0ff629e1a3f8716c19ccf8744a05d23777361d285d4f89a1028ea4113ce4a3ad6de8bbe0340f80bc08d7d3c893267514b553b3fd46ae8a1cee939d3eb24b             7497 main/binary-amd64/Packages.gz
+ 9b5ae0edd066ed32480743ef461f8e9003b6d569caef5f4770b3c8369c8e31f8bbe498cc2e32d17eda6fbb924ad8e68a98443e2238bba8fcdba6b54d644d93ff            20496 main/binary-arm64/Packages
+ f058b2e9bd79960e0f6b0b62e11f3f8e4b87bed7ea1fc131f1c2403983f4a7479fcd722764c2d8319c650ea9b36f2131ebb176d366b19bf8197675acffbbd85e             7505 main/binary-arm64/Packages.gz
 -----BEGIN PGP SIGNATURE-----
 
-iHUEARYKAB0WIQSib7VV/ZBFd8nquMeXj286pkoe8gUCav/htAAKCRCXj286pkoe
-8srkAQD60oA8ICa4K4vwQORzkyGOYSnzy22P3djmZfCmkKQQLwEA8BkVS1UoI4uU
-Bi+jjJuK+KjLvOxM+amz1kceHmyMmAg=
-=yCtm
+iHUEARYKAB0WIQSib7VV/ZBFd8nquMeXj286pkoe8gUCav/jeQAKCRCXj286pkoe
+8r/KAP94IMJhGL5q+I45PWg/4Ko59rXw7doCNexoBMOidKQl/gD9HRRMVl8L0Ki0
+7LSJjTOPDRsBto5jIUvG1NnI+O5zlAk=
+=uA0E
 -----END PGP SIGNATURE-----

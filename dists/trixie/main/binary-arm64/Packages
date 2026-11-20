@@ -370,3 +370,47 @@ Description: Plebian-OS administration tools
  The release updater and its closure selector, and the root helpers that
  install and verify the optional runtimes of a Plebian-OS release.
 
+Package: tmux-cli
+Architecture: all
+Version: 0.7.9.8+packaging1
+Priority: optional
+Section: utils
+Maintainer: itsmygithubacct <itsmygithubacct@users.noreply.github.com>
+Installed-Size: 304
+Depends: python3, tmux
+Filename: pool/main/t/tmux-cli/tmux-cli_0.7.9.8+packaging1_all.deb
+Size: 67688
+MD5sum: 45d8d14175c255312c52eb56818c6d00
+SHA1: d15a77bfe36268b4f2bdf2a05423e69390ed0d6e
+SHA256: e189cc07cadb053269f18c5b4f9e7e6db68d7dd9555dfe6417b5b3d1a9d7a099
+SHA512: 25ba61bccc10929229ac15a7413ba150be4246e3bebe92bbcfa21c9dbad5ee6fda35c48572fa5810174abb1d716ce1d4ed2ff4406e95cfbcce3cada641e14c30
+Homepage: https://github.com/itsmygithubacct/tmux-cli
+Description: tmux command line for humans and programs
+ tb reads, writes and manages tmux sessions with stable exit codes and an
+ optional JSON envelope.
+ .
+ This package installs the program under /usr/share/tmux-cli and links
+ /usr/bin/tb to it.
+
+Package: tmux-tui
+Architecture: all
+Version: 0.2.0+packaging1
+Priority: optional
+Section: utils
+Maintainer: itsmygithubacct <itsmygithubacct@users.noreply.github.com>
+Installed-Size: 56
+Depends: python3, tmux, tmux-cli
+Filename: pool/main/t/tmux-tui/tmux-tui_0.2.0+packaging1_all.deb
+Size: 11896
+MD5sum: d0387213c13db3e08a615da7728a3ff2
+SHA1: 36a61051363a02f44c701d46f1cf394db089bec2
+SHA256: b64398874e1ae0e641d846e0a3444e362167e0c54545c1545aa1de0ef226563a
+SHA512: 8a4d4ed487ad32a0821756f722a0d262bbefb3cb1797d067b0d228c051c1ecfd0f7e9fd8a14db33d9ab681551380dd8fd5ce5b3b00c172d49a3eeb41c32fbb87
+Homepage: https://github.com/itsmygithubacct/tmux-tui
+Description: terminal UI for tmux sessions
+ tmux-tui is a curses interface for tmux sessions. It talks to tmux through
+ the tb command from tmux-cli.
+ .
+ This package installs the program under /usr/share/tmux-tui and links
+ /usr/bin/tmux-tui to it.
+
