@@ -43,6 +43,26 @@ Description: music player
  and its meter library under /usr. The player reports its usage with
  --help, without opening a window.
 
+Package: kilix-amp
+Architecture: arm64
+Version: 0.20261029+packaging2
+Priority: optional
+Section: sound
+Maintainer: itsmygithubacct <itsmygithubacct@users.noreply.github.com>
+Installed-Size: 8383
+Depends: libasound2t64 (>= 1.0.29), libc6 (>= 2.39), libfluidsynth3 (>= 2.0.5), libgcc-s1 (>= 4.2), libsdl2-2.0-0 (>= 2.24.0), libsdl2-image-2.0-0 (>= 2.0.5), libsndfile1 (>= 1.0.20), libwayland-client0 (>= 1.11.0), zlib1g (>= 1:1.1.4)
+Filename: pool/main/k/kilix-amp/kilix-amp_0.20261029+packaging2_arm64.deb
+Size: 8591552
+MD5sum: c9a62e61efaa3a84613af02067eb9808
+SHA1: 6816feeec9f00c3e124aaf8ff63f891e715f866d
+SHA256: c826a1f7ab6e9ef8af6b05eb0dec190300f557691eea887dc3040aa47ca366b2
+SHA512: 3ca4ecab786cb68e0a78cce91f637cd7dc4a3e77f90b6eb09a6abd8805882d6d0815108651ad9671daec6faaeae4e32278ec1c00e19f00e6a9b493a9ba5c2c8e
+Homepage: https://github.com/itsmygithubacct/kilix-amp
+Description: music player
+ kilix-amp is a skinnable music player. This package installs the player
+ and its meter library under /usr. The player reports its usage with
+ --help, without opening a window.
+
 Package: kilix-claudex
 Architecture: all
 Version: 0.20261112+packaging1
