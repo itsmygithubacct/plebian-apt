@@ -23,6 +23,26 @@ Description: Kilix 95, the default Kilix desktop
  finds it when no provider checkout is configured. Its settings, caches and
  state stay in each user's home.
 
+Package: kilix-amp
+Architecture: arm64
+Version: 0.20261029+packaging1
+Priority: optional
+Section: sound
+Maintainer: itsmygithubacct <itsmygithubacct@users.noreply.github.com>
+Installed-Size: 368
+Depends: libc6 (>= 2.38), libfluidsynth3 (>= 2.0.5), libsdl2-2.0-0 (>= 2.24.0), libsdl2-image-2.0-0 (>= 2.0.5), libsndfile1 (>= 1.0.20), zlib1g (>= 1:1.1.4)
+Filename: pool/main/k/kilix-amp/kilix-amp_0.20261029+packaging1_arm64.deb
+Size: 114928
+MD5sum: 34e97355740f38b4c25751ad83646cfb
+SHA1: c702bab31b94c07091e23d9e242f9ff24bee2976
+SHA256: e53116d31fce2eae25902eb48abe57243bf224d3f629df90995a146b10673aab
+SHA512: c8911fa567865830090e6ad129c6fad0a1dee34637392a0de20f36efb7cf2f10f3fbcb0732e9139a5c51d6d3d6a1c1ba20d2e204d88ab7af2b35290c33989f1d
+Homepage: https://github.com/itsmygithubacct/kilix-amp
+Description: music player
+ kilix-amp is a skinnable music player. This package installs the player
+ and its meter library under /usr. The player reports its usage with
+ --help, without opening a window.
+
 Package: kilix-claudex
 Architecture: all
 Version: 0.20261112+packaging1

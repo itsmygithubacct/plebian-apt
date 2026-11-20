@@ -4,34 +4,34 @@ Hash: SHA512
 Architectures: amd64 arm64
 Codename: trixie
 Components: main
-Date: Fri, 20 Nov 2026 07:26:13 +0000
+Date: Fri, 20 Nov 2026 07:32:10 +0000
 Label: Plebian-OS
 Origin: Plebian-OS
 Suite: trixie
 MD5Sum:
- 9399aa394990e7c8f92a13215665f4ba            27768 main/binary-amd64/Packages
- d028f0531bd68b7173c5b50a903ec0b0             9964 main/binary-amd64/Packages.gz
- 16be2affbd68a789deb2deb8180bbf53            27769 main/binary-arm64/Packages
- 5e5ee9dd6c922b86a2c34cd5acebe25c             9967 main/binary-arm64/Packages.gz
+ c23189dd9a749661efabca8127855302            28764 main/binary-amd64/Packages
+ b44eabc0b6c67e5d8ebe973b8152a547            10306 main/binary-amd64/Packages.gz
+ 10b3d020c1c593d14bb2e5d8b7fb283d            28765 main/binary-arm64/Packages
+ 8c7e8d3ce4622d08e6ad0add3248558d            10314 main/binary-arm64/Packages.gz
 SHA1:
- 92f187d075beae3c559b775599ace29e671d0eaa            27768 main/binary-amd64/Packages
- 6ec7d487e711ac1e04793d49964199c2ab7aa0ca             9964 main/binary-amd64/Packages.gz
- 1d1f0b70b76626e740be69e167b909a9c2900030            27769 main/binary-arm64/Packages
- a6d94139085a2a346ac5374cb5043d07353a870f             9967 main/binary-arm64/Packages.gz
+ 4cb3f0c8aa3f90446e28ca8559af57ec094eccfe            28764 main/binary-amd64/Packages
+ 7c38599b78eff1e5131104e83009e0aa61127963            10306 main/binary-amd64/Packages.gz
+ 6d8c36ec66f4e062692cfa8378b4f34f469b7fd0            28765 main/binary-arm64/Packages
+ 28573fc3da4d7114db91436ec96743f4e2837583            10314 main/binary-arm64/Packages.gz
 SHA256:
- c416a4e346caa427f6ff696f9868363f3f7d9f7ed23bcb1b7593c8144a722673            27768 main/binary-amd64/Packages
- a73b2231a70d7408d9fb93521ebb31ab5f1ca359b0c06278c4c9fb2f83988cd9             9964 main/binary-amd64/Packages.gz
- 234627acdba8b0f655f0f24b8b8afe6ab94fdaa49c7933fc388a1b0e1b16afcb            27769 main/binary-arm64/Packages
- 5989e242c3eba5f4500858f076eaedf66d542c54c4ec6574f04f8777fc9c59ac             9967 main/binary-arm64/Packages.gz
+ 3e683c86034c0d4a2c52c397ad1b2a1680e4140bee755c9553d001ffe8e68d51            28764 main/binary-amd64/Packages
+ a6ae45e9b44563ab6ac33bebd76c313f712cca3d76772512371aed291583cc9b            10306 main/binary-amd64/Packages.gz
+ ff24adcd3dcc1f588c6639d069407bcddd9ef56453f57e496f731b8250b34322            28765 main/binary-arm64/Packages
+ 3ff30dece772e9ac6406fe00c53926f3468ea901afb3923269aaab4202ccd488            10314 main/binary-arm64/Packages.gz
 SHA512:
- b3963182c92c68e9df851db9e7f16329e31be170b8209500570ce39b747a5b803dab2fcd05bbd3dc2382bf58799c10813f8b25991bd8c9e3b60a2f4e0c1c66ec            27768 main/binary-amd64/Packages
- f8443e8138ac4c860c20439e2368ef460ef77cc378334df98633a3c774c34716a28d659197cb80c12e1d42cad269febfc54bf7fa2831b2e09163cc34438c7a0d             9964 main/binary-amd64/Packages.gz
- 51189a74ae3edc5126694611c73bf44db1f3c353b6e81f3c6b26cb06b64fec9119ab00b6335c36a6bc9060d5f06dab3f79000057c39fdc4876076c882c6a572b            27769 main/binary-arm64/Packages
- 080cc2a45b52ae7648731f14ca005798a18a890e31df3218d42a91b900b957411220e0bd6bf0f25e2d7fc8e61f249792c626f91725249a774f94ce19e4179df4             9967 main/binary-arm64/Packages.gz
+ 03ee9024b8d16594442b7b602cb49af153387598cc2ea7fe4eab19ddf04e545573842f31e2fe0492b23fc9f9bd594ad495c24b220b864f320e47e3f8bb08f6a5            28764 main/binary-amd64/Packages
+ 80efd2df059fb0d9a5ad4cb06c96e82878cda538e12b0f4c18fbdc372e182ce933ffcd62cd702ce110d54650fee172d5f960be9d3f1073a2db53a1bbda051dab            10306 main/binary-amd64/Packages.gz
+ 2993531e0c1a2acdb2160b2404d6b8ac870278f46992dde003e8e49f8c8f8dcdfd96cdcdd2a4807a9a0fe2ee6cd4c905102a611fe785fd9057d8f1bde8c294f3            28765 main/binary-arm64/Packages
+ b1bc6c690ad1c8ee854a1c366224ba4b03b06d3b339e6187631805da277b86281f7ddadc625971ad75bbc73b3c9345fa97a73f41039c2dfe923262106e76aee3            10314 main/binary-arm64/Packages.gz
 -----BEGIN PGP SIGNATURE-----
 
-iHUEARYKAB0WIQSib7VV/ZBFd8nquMeXj286pkoe8gUCav/2FQAKCRCXj286pkoe
-8m04AQDAfGcn/B86wJPYXz3Qz4nnpcYbfSlSgX1GKxXPD4uYwAD+L3SM/S00PxCg
-x9i5/gAOr3u+21E3hVlOknuEAflBfwU=
-=qZum
+iHUEARYKAB0WIQSib7VV/ZBFd8nquMeXj286pkoe8gUCav/3egAKCRCXj286pkoe
+8jceAQDoPrkIJF1uzze1uhgMs35MG3+AyEgdekD44FLBHLiOtgEA5L8A38C1RgX/
+p6rZzRRfO+YpfnoUaZcnIHjDFHNzDwE=
+=5u4W
 -----END PGP SIGNATURE-----
