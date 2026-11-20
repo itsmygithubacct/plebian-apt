@@ -449,6 +449,26 @@ SHA512: 3d69bfdaf044991b6e8e75e36721bfe554409f52a35eb4504548a0378dd1589c5c120eda
 Description: pinned Kilix ONNX Runtime development candidate
  Debian system-ONNX registration and SSE2 inference fixes.
 
+Package: neuronte
+Architecture: arm64
+Version: 2.1.0+packaging1
+Priority: optional
+Section: libs
+Maintainer: itsmygithubacct <itsmygithubacct@users.noreply.github.com>
+Installed-Size: 168
+Depends: libc6 (>= 2.34)
+Filename: pool/main/n/neuronte/neuronte_2.1.0+packaging1_arm64.deb
+Size: 33668
+MD5sum: f6862b91c239119e9af1a897b306ae7f
+SHA1: f7b5842cfab928ee2526b3504b049a9097f3afe1
+SHA256: e1a6b1515a8cf24c20fb8d81c18a3a865f151372f8c38cc98c52bccfa2f0ba31
+SHA512: ff309dde81bdc93dd3342ccd46eb7ee6f4851a7cfd21a8dd8b9193ff44c39aef2dde6a263e0c7a9ecda577b5b7c23453882136a704a0927a209a692b35caab15
+Homepage: https://github.com/itsmygithubacct/neuronte-v2
+Description: neural font library
+ Neuronte draws characters from a packed weight file the caller supplies.
+ This package installs the shared library and a load probe. Packed weight
+ files stay outside the package.
+
 Package: pleb
 Architecture: arm64
 Version: 0.2.3+packaging1
