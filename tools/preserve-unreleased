@@ -1,0 +1,84 @@
+#!/usr/bin/python3
+"""Carry the published opt-in suite into a trixie Pages rebuild."""
+from email.parser import Parser
+import hashlib
+from pathlib import Path
+import shutil
+import subprocess
+import sys
+from tempfile import TemporaryDirectory
+
+
+def preserve(published, output):
+    revision = subprocess.check_output(["git", "-C", published, "rev-parse", "HEAD"], text=True).strip()
+    keyring = output / "plebian-archive-keyring.gpg"
+    suite = Path("dists/UNRELEASED")
+
+    with TemporaryDirectory(dir=output.parent) as scratch:
+        stage = Path(scratch)
+
+        def restore(path):
+            dest = stage / path
+            dest.parent.mkdir(parents=True, exist_ok=True)
+            with dest.open("wb") as stream:
+                subprocess.run(["git", "-C", published, "show", f"{revision}:{path}"],
+                               stdout=stream, check=True)
+            return dest
+
+        signed = restore(suite / "InRelease")
+        release = restore(suite / "Release")
+        signature = restore(suite / "Release.gpg")
+        clear = subprocess.check_output(["gpgv", "--keyring", keyring, "--output", "-", signed])
+        subprocess.run(["gpgv", "--keyring", keyring, signature, release], check=True)
+        fields = Parser().parsestr(clear.decode())
+        if clear != release.read_bytes() or fields["Suite"] != "UNRELEASED":
+            raise ValueError("unexpected signed suite")
+
+        def checked(path, size, digest):
+            dest = restore(path)
+            with dest.open("rb") as stream:
+                if dest.stat().st_size != int(size) or hashlib.file_digest(stream, "sha256").hexdigest() != digest:
+                    raise ValueError(f"size or SHA-256 mismatch for {path}")
+            return dest
+
+        packages = {}
+        for line in fields["SHA256"].splitlines():
+            if not line.strip():
+                continue
+            digest, size, name = line.split()
+            index = Path(name)
+            if index.is_absolute() or ".." in index.parts:
+                raise ValueError(f"invalid index path {index}")
+            file = checked(suite / index, size, digest)
+            if index.name == "Packages":
+                for entry in file.read_text().strip().split("\n\n"):
+                    row = Parser().parsestr(entry)
+                    path = Path(row["Filename"])
+                    if path.parts[:2] != ("pool", "main") or ".." in path.parts or path.suffix != ".deb":
+                        raise ValueError(f"invalid package path {path}")
+                    pin = (row["Size"], row["SHA256"])
+                    if packages.setdefault(path, pin) != pin:
+                        raise ValueError(f"conflicting package pin for {path}")
+
+        if not packages:
+            raise ValueError("no packages in the signed opt-in suite")
+        for path, (size, digest) in packages.items():
+            checked(path, size, digest)
+        files = [path for path in stage.rglob("*") if path.is_file()]
+        for path in files:
+            dest = output / path.relative_to(stage)
+            if dest.exists():
+                with dest.open("rb") as old, path.open("rb") as new:
+                    if hashlib.file_digest(old, "sha256").digest() != hashlib.file_digest(new, "sha256").digest():
+                        raise ValueError(f"rebuilt tree has different bytes for {path.relative_to(stage)}")
+        for path in files:
+            dest = output / path.relative_to(stage)
+            dest.parent.mkdir(parents=True, exist_ok=True)
+            if not dest.exists():
+                shutil.copyfile(path, dest)
+
+
+if __name__ == "__main__":
+    if len(sys.argv) != 3:
+        sys.exit("usage: preserve-unreleased GH_PAGES_CHECKOUT REBUILT_PAGES")
+    preserve(Path(sys.argv[1]).resolve(), Path(sys.argv[2]).resolve())
