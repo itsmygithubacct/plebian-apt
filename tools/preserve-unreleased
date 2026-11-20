@@ -2,8 +2,8 @@
 """Carry the published opt-in suite into a trixie Pages rebuild."""
 from email.parser import Parser
 import hashlib
+import os
 from pathlib import Path
-import shutil
 import subprocess
 import sys
 from tempfile import TemporaryDirectory
@@ -14,7 +14,7 @@ def preserve(published, output):
     keyring = output / "plebian-archive-keyring.gpg"
     suite = Path("dists/UNRELEASED")
 
-    with TemporaryDirectory(dir=output.parent) as scratch:
+    with TemporaryDirectory(dir=output) as scratch:
         stage = Path(scratch)
 
         def restore(path):
@@ -65,17 +65,23 @@ def preserve(published, output):
         for path, (size, digest) in packages.items():
             checked(path, size, digest)
         files = [path for path in stage.rglob("*") if path.is_file()]
+
+        def verify_existing(path, dest):
+            with dest.open("rb") as old, path.open("rb") as new:
+                if hashlib.file_digest(old, "sha256").digest() != hashlib.file_digest(new, "sha256").digest():
+                    raise ValueError(f"rebuilt tree has different bytes for {path.relative_to(stage)}")
+
         for path in files:
             dest = output / path.relative_to(stage)
             if dest.exists():
-                with dest.open("rb") as old, path.open("rb") as new:
-                    if hashlib.file_digest(old, "sha256").digest() != hashlib.file_digest(new, "sha256").digest():
-                        raise ValueError(f"rebuilt tree has different bytes for {path.relative_to(stage)}")
+                verify_existing(path, dest)
         for path in files:
             dest = output / path.relative_to(stage)
             dest.parent.mkdir(parents=True, exist_ok=True)
-            if not dest.exists():
-                shutil.copyfile(path, dest)
+            try:
+                os.link(path, dest)
+            except FileExistsError:
+                verify_existing(path, dest)
 
 
 if __name__ == "__main__":
