@@ -846,6 +846,30 @@ Description: Pleb, a Kilix desktop session
  This package adds "Pleb" to the display manager's session list. Each user's
  settings and state stay in their home.
 
+Package: pleb
+Architecture: amd64
+Version: 0.2.3+packaging3
+Priority: optional
+Section: x11
+Maintainer: itsmygithubacct <itsmygithubacct@users.noreply.github.com>
+Installed-Size: 2419
+Depends: kilix, python3, python3-xlib, python3-dbus, python3-gi, python3-gi-cairo, python3-tk, gir1.2-gtk-3.0, gir1.2-gst-plugins-base-1.0, x11-xserver-utils, x11-utils, xterm, openbox, autocutsel, i3lock, xss-lock, lxpolkit, xfce4-power-manager, xfconf, blueman, udiskie, ibus, libnotify-bin, dbus-x11, dbus-user-session, xdg-user-dirs, xdg-desktop-portal, xdg-desktop-portal-gtk, pipewire, gstreamer1.0-pipewire, gstreamer1.0-plugins-base, gstreamer1.0-plugins-good, systemd, libpam-systemd, libc6 (>= 2.27), libpipewire-0.3-0t64 (>= 0.3.34)
+Recommends: kilix-95, ibus-gtk3, pulseaudio-utils, zenity, pavucontrol, orca
+Filename: pool/main/p/pleb/pleb_0.2.3+packaging3_amd64.deb
+Size: 1882300
+MD5sum: 52f6210553d5e54a7c735bfb727c1542
+SHA1: 1fe58eeeeb289b82c742816eef107ab870362cbb
+SHA256: 6a5a48a542d5f22b8b2928e780453e6dcf08d10bf0c295a4f0ded668eb34476a
+SHA512: 3a08e1debbcc85ed6fd5f67ad53b90747f751ebbde55f1e43573c2a40b28d673a5ebb52aa5b49dc893fa7a25ab3c567cf2e45db6d43a521d10cd6498b1ceae19
+Homepage: https://github.com/itsmygithubacct/pleb
+Description: Pleb, a Kilix desktop session
+ Pleb is an X session whose desktop is one screen-filling Kilix window,
+ managed by Openbox, with a screen locker, notifications, display settings,
+ power, storage and Bluetooth helpers and a screen-capture portal backend.
+ .
+ This package adds "Pleb" to the display manager's session list. Each user's
+ settings and state stay in their home.
+
 Package: plebian-archive-keyring
 Architecture: all
 Version: 0.2.3+packaging1
