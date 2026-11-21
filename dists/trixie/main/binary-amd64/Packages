@@ -664,6 +664,26 @@ Description: Pleb desktop
  This metapackage installs pleb, kilix-multiplexer, and the desktop defaults
  from plebian-desktop-base.
 
+Package: pleb-desktop
+Architecture: all
+Version: 0.2.3+packaging9
+Priority: optional
+Section: admin
+Source: plebian-os
+Maintainer: itsmygithubacct <itsmygithubacct@users.noreply.github.com>
+Installed-Size: 11
+Depends: kilix-multiplexer, pleb, plebian-desktop-base (= 0.2.3+packaging9)
+Filename: pool/main/p/pleb-desktop/pleb-desktop_0.2.3+packaging9_all.deb
+Size: 3508
+MD5sum: 6f450a98adafaca1c2238b1541226e04
+SHA1: f470ba79005aaa456f54f3ebf68d9fd744c59ae6
+SHA256: 99ec3e050e00ec934245f2c8e9e559feada6534a7fd96fc3357a99a15f278aa7
+SHA512: 7c219062931a1924fe60b44fab4e021ab3983ba09963860b633f999c197d645802aee11fcb5808c5359ffe1b7144d65c9db40580d07934f05a93053db334bb34
+Homepage: https://github.com/itsmygithubacct/plebian-os
+Description: Pleb desktop
+ This metapackage installs pleb, kilix-multiplexer, and the desktop defaults
+ from plebian-desktop-base.
+
 Package: pleb
 Architecture: amd64
 Version: 0.2.3+packaging1
@@ -728,6 +748,26 @@ Description: Plebian-OS archive signing key
  where an apt source can name it with Signed-By, and is trusted for no other
  repository.
 
+Package: plebian-archive-keyring
+Architecture: all
+Version: 0.2.3+packaging9
+Priority: optional
+Section: admin
+Source: plebian-os
+Maintainer: itsmygithubacct <itsmygithubacct@users.noreply.github.com>
+Installed-Size: 13
+Filename: pool/main/p/plebian-archive-keyring/plebian-archive-keyring_0.2.3+packaging9_all.deb
+Size: 4124
+MD5sum: 5ac191234ee744077b9c4bd46ebcee35
+SHA1: c7a14b99399567a0e42aaab3858f976a88ab66e6
+SHA256: 852fc67305dc5e1f57ca57c17d8755e2f320b6a0edabc57858d7aa3a49a118d5
+SHA512: 1279f96aee00bff82d1ef03890c5eef8f1b9b86f9034989ff19cd38fe832e78b29303af92bbd4e7b615a342d017bd1acf1c2f5120cf5d54219a660620c64b89f
+Homepage: https://github.com/itsmygithubacct/plebian-os
+Description: Plebian-OS archive signing key
+ The public key that signs the Plebian-OS package repository. It is installed
+ where an apt source can name it with Signed-By, and is trusted for no other
+ repository.
+
 Package: plebian-desktop-base
 Architecture: all
 Version: 0.2.3+packaging4
@@ -763,6 +803,27 @@ MD5sum: 4b1cd9f0972e02e54f1a04ae3490e225
 SHA1: 8ddb1ffff6fc2afc7c86fc504de592106433b34a
 SHA256: 903b48591b515e42b8e39e4f518c5d921b817bb2a168bdbd26c24bf978889d10
 SHA512: cd2c9f288937a57b9ec14d558c461c19aa83dd9f53162c95d58aac897daad66fb3af3002a7cd0521174785a1700c33078fe6102c1c6bf00a1ba9adf6cdf67ea1
+Homepage: https://github.com/itsmygithubacct/plebian-os
+Description: Plebian-OS desktop artwork and login defaults
+ The Plebian-OS wallpaper, the login greeter settings that use it, the
+ attribution and licence notices for the artwork, the apt pin for the
+ qualified Qt GUI libraries, and the session, portal, application,
+ lid, console, and speaker drop-ins.
+
+Package: plebian-desktop-base
+Architecture: all
+Version: 0.2.3+packaging9
+Priority: optional
+Section: admin
+Source: plebian-os
+Maintainer: itsmygithubacct <itsmygithubacct@users.noreply.github.com>
+Installed-Size: 1749
+Filename: pool/main/p/plebian-desktop-base/plebian-desktop-base_0.2.3+packaging9_all.deb
+Size: 1740240
+MD5sum: 7614474747325089aae7ef253067d142
+SHA1: 6f85c83ea1b5ac5f5d9b906a0447787b512a4070
+SHA256: 41c80c420d48fd555899365da3ce60f04b78fcc56dbc707d5967cd88df788601
+SHA512: cacfa6ed28219ff0cf61045076b84966f24011a2d5f473e3151613ccd6d4875c76902463a75d04fb91a28bb87386a3a3504bd93cae0f30fa45c409854d5ecc14
 Homepage: https://github.com/itsmygithubacct/plebian-os
 Description: Plebian-OS desktop artwork and login defaults
  The Plebian-OS wallpaper, the login greeter settings that use it, the
@@ -812,6 +873,27 @@ Description: Plebian-OS first-boot provisioning
  the systemd unit that runs it once. Installing this package does not enable
  the unit: the installer does that for a new machine.
 
+Package: plebian-os-firstboot
+Architecture: all
+Version: 0.2.3+packaging9
+Priority: optional
+Section: admin
+Source: plebian-os
+Maintainer: itsmygithubacct <itsmygithubacct@users.noreply.github.com>
+Installed-Size: 504
+Depends: plebian-os-tools (= 0.2.3+packaging9), systemd
+Filename: pool/main/p/plebian-os-firstboot/plebian-os-firstboot_0.2.3+packaging9_all.deb
+Size: 102924
+MD5sum: c3b4ece20cc0e58770aaac8c63734dfa
+SHA1: bfccc5949c2d2fbca88bfc484df089abc6104775
+SHA256: 7fbee8a9c35ff1a023ad27bfac5bbb29b7d09b6a7c85b934ad473dbab542c763
+SHA512: cc10b620037f828925c4dd4f14ee33345fa492eec9e019e1ff922dee690f9e87e73575851e7bd36fdef1ef55234f4bd2f8dd23e205a879743dbcedef96e28b23
+Homepage: https://github.com/itsmygithubacct/plebian-os
+Description: Plebian-OS first-boot provisioning
+ The provisioner that turns a fresh Debian installation into Plebian-OS and
+ the systemd unit that runs it once. Installing this package does not enable
+ the unit: the installer does that for a new machine.
+
 Package: plebian-os-release
 Architecture: all
 Version: 0.2.3+packaging1
@@ -845,6 +927,25 @@ MD5sum: 4353bc4cbd315e193957372ec97645a0
 SHA1: 4164218d1a5619768d330c9aeaaf622177091244
 SHA256: b22b516f5e6a1a61dea459165646d67a8dc8450bda72183038f37cc3621a5644
 SHA512: 3374b11fd030fc77ab6842a4928c1053b801e920f2fdd4334c715b2833b8e97ce0bd01f19da5e3297038721e80b6b3a089d37a120d1da533e7a53fa73257c9ac
+Homepage: https://github.com/itsmygithubacct/plebian-os
+Description: Plebian-OS release identity
+ The installed Plebian-OS version and the release manifest that pins the
+ runtime components of that release.
+
+Package: plebian-os-release
+Architecture: all
+Version: 0.2.3+packaging9
+Priority: optional
+Section: admin
+Source: plebian-os
+Maintainer: itsmygithubacct <itsmygithubacct@users.noreply.github.com>
+Installed-Size: 33
+Filename: pool/main/p/plebian-os-release/plebian-os-release_0.2.3+packaging9_all.deb
+Size: 11476
+MD5sum: 5352eb161b72c69dab2b632176a87208
+SHA1: 418cadba004906eed19459aabbde20150f2632d2
+SHA256: 404ec372f0127fa024de8942152b025a6dcdc2843eb445ec98410eb537702352
+SHA512: ea694c3a2d3ae37775d0b864d83dbb141354aa637174124e978637850a3cc3931f198021147dac98eebc5995add47f38f1614942845e5be1840c90e3198391fe
 Homepage: https://github.com/itsmygithubacct/plebian-os
 Description: Plebian-OS release identity
  The installed Plebian-OS version and the release manifest that pins the
@@ -890,6 +991,26 @@ Description: Plebian-OS administration tools
  The release updater and its closure selector, and the root helpers that
  install and verify the optional runtimes of a Plebian-OS release.
 
+Package: plebian-os-tools
+Architecture: all
+Version: 0.2.3+packaging9
+Priority: optional
+Section: admin
+Source: plebian-os
+Maintainer: itsmygithubacct <itsmygithubacct@users.noreply.github.com>
+Installed-Size: 1000
+Depends: plebian-os-release (= 0.2.3+packaging9), python3, git, sudo, curl, ca-certificates
+Filename: pool/main/p/plebian-os-tools/plebian-os-tools_0.2.3+packaging9_all.deb
+Size: 190480
+MD5sum: 09125b4959514b46359f6a91e2701320
+SHA1: fe85052179c80d205901071e9d204bc7dc4b2e1c
+SHA256: 27dd08c5dd504836aceea423da2162b05b1217307e49bf6941a8421785b5e121
+SHA512: 04f1cfca7ebe41dc73f47a519eec76678309018225203ad6627de5ef3b8cb93568087600f80d6268f9f7473582d4149e170049ba5b4219d2616e5af74c005472
+Homepage: https://github.com/itsmygithubacct/plebian-os
+Description: Plebian-OS administration tools
+ The release updater and its closure selector, and the root helpers that
+ install and verify the optional runtimes of a Plebian-OS release.
+
 Package: task-pleb-desktop
 Architecture: all
 Version: 0.2.3+packaging4
@@ -924,6 +1045,25 @@ MD5sum: 2d5ecbef384080214e57d2c160882c29
 SHA1: acf200601721db7e2f76fd1b5cf9ac8dc21a8a7f
 SHA256: b70291902d9f2b9ff06db14c2a806f20f80d2c77ba30b69752e7fe262cdf24bc
 SHA512: ce0bab54af669f33ba03e8e88816c216876a625d60e29032fdfce0b96adf1d478ec971622a7ac10c15cf7bc674ff7287fd0d98e341b981b09dda5603ea23ecc1
+Homepage: https://github.com/itsmygithubacct/plebian-os
+Description: Pleb desktop task
+ The task package for the Pleb desktop. It depends on pleb-desktop.
+
+Package: task-pleb-desktop
+Architecture: all
+Version: 0.2.3+packaging9
+Priority: optional
+Section: admin
+Source: plebian-os
+Maintainer: itsmygithubacct <itsmygithubacct@users.noreply.github.com>
+Installed-Size: 14
+Depends: pleb-desktop (= 0.2.3+packaging9)
+Filename: pool/main/t/task-pleb-desktop/task-pleb-desktop_0.2.3+packaging9_all.deb
+Size: 3668
+MD5sum: 4acfece8a44a262d64b35e3e7a178bd3
+SHA1: 31bd2aa8c15f0515fc68532e44558727759d59b0
+SHA256: 29f21f97a366de2a68655958ad8d4fd0a79f96cdaff699357198e53d2290ad40
+SHA512: 74b6516eedab9a68fd153454bbcbb7e666b75f35986091b64f91f10ae33d28c1b043b52361a4299b3f05267c7d915d2053f4a68500c522683464cea932649078
 Homepage: https://github.com/itsmygithubacct/plebian-os
 Description: Pleb desktop task
  The task package for the Pleb desktop. It depends on pleb-desktop.
