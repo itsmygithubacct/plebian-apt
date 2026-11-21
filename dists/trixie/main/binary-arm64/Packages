@@ -104,6 +104,25 @@ Description: pinned content catalog for Kilix
  The catalog and installer live under /usr/share/kilix-content, with the
  vendored licence library beside them. Model files are not included.
 
+Package: kilix-content
+Architecture: all
+Version: 0.4.0+packaging3
+Priority: optional
+Section: python
+Maintainer: itsmygithubacct <itsmygithubacct@users.noreply.github.com>
+Installed-Size: 2312
+Depends: python3
+Filename: pool/main/k/kilix-content/kilix-content_0.4.0+packaging3_all.deb
+Size: 263208
+MD5sum: ae7101d7c22ff380c6d3954e6bcebaa0
+SHA1: 5305c3921d1d0bb9cf8ae2f65015a85d53fea491
+SHA256: 761856fed5ef7253f3f0fbf790d0131a324c0c16b79eed71d70ae398b2da2e0a
+SHA512: 5830a226aadf7d2e409aa4a1c4c0a62667be70cc4a22a6f33f9e24ab598d20bac51ed46034a06c8ccf4b233bf51f45837f0d6507582508e740cd278044b8de90
+Homepage: https://github.com/itsmygithubacct/kilix-content
+Description: pinned content catalog for Kilix
+ The catalog and installer live under /usr/share/kilix-content, with the
+ vendored licence library beside them. Model files are not included.
+
 Package: kilix-encodec-converter
 Architecture: all
 Version: 0.2.2+packaging1
@@ -278,6 +297,28 @@ Description: plain requests to Kilix
  on first use. Catalog, tuning, transcript, and rollout libraries come
  from their own packages.
 
+Package: kilix-needle
+Architecture: all
+Version: 0.20261116+packaging3
+Priority: optional
+Section: utils
+Maintainer: itsmygithubacct <itsmygithubacct@users.noreply.github.com>
+Installed-Size: 1511
+Depends: python3, kilix-content, kilix-ml, kilix-transcript-clean, kilix-tui-utils
+Filename: pool/main/k/kilix-needle/kilix-needle_0.20261116+packaging3_all.deb
+Size: 323232
+MD5sum: 583a003aabb2649794e64056be725e9c
+SHA1: e940afcf72e0bbee68d9ed7915bec0c292a8c81e
+SHA256: 1abc329f36a5e18c7f1eec65bd575185fb845eb94d105cca7905f1f798d0b5d2
+SHA512: 31cd49060789eabcbf91f6ff522f3e370d4d065f1f4567a99b7f3ecbc2ada8d0dad69346a26224cb44186be33adf2448c237c05e6b1b0a5a4e2863e058e68f50
+Homepage: https://github.com/itsmygithubacct/kilix-needle
+Description: plain requests to Kilix
+ kilix-needle turns a request into one Kilix job. This package installs
+ the command and its runtime under /usr/share/kilix-needle.
+ The command model is not included; kilix-needle install downloads it
+ on first use. Catalog, tuning, transcript, and rollout libraries come
+ from their own packages.
+
 Package: kilix-pdf
 Architecture: arm64
 Version: 0.1.0+packaging1
@@ -358,6 +399,25 @@ Description: Kilix terminal utilities
  Terminal tools for files, the system, sessions, and the small desktop
  centers. Each command runs the copy installed under /usr/share/kilix-tui-utils.
 
+Package: kilix-tui-utils
+Architecture: all
+Version: 0.3.1+packaging2
+Priority: optional
+Section: utils
+Maintainer: itsmygithubacct <itsmygithubacct@users.noreply.github.com>
+Installed-Size: 1475
+Depends: python3
+Filename: pool/main/k/kilix-tui-utils/kilix-tui-utils_0.3.1+packaging2_all.deb
+Size: 278840
+MD5sum: 51ce1610b58ca1f20f434bbad0b90fa3
+SHA1: 5abf7e3ab8c1abdcd819b69b8ac891a32873e4f6
+SHA256: 8069646bd492f6264b956ed59c40b8daa440a63265b0770a86beced45fdd5157
+SHA512: 095981dc28575242cd40f84f7d15326de7bf9b5a72855cb0484e471661c5ed20e227e5797dd38e8e542bb5f47357e31e30ae23dde378bf0e5dafcef26f8e99d9
+Homepage: https://github.com/itsmygithubacct/kilix-tui-utils
+Description: Kilix terminal utilities
+ Terminal tools for files, the system, sessions, and the small desktop
+ centers. Each command runs the copy installed under /usr/share/kilix-tui-utils.
+
 Package: kilix-voice
 Architecture: all
 Version: 0.1.6+packaging1
@@ -417,6 +477,33 @@ MD5sum: cd3ff96800a715ddcad72db75bf16075
 SHA1: 248329fc8eff85ccbe5d668ada5779f500541ed9
 SHA256: e8a0794b17ce4e7040a8fb84627fb87a7c67cb20ffd4d6285bacf9e4b26777cf
 SHA512: a89e830cf0c8440c15b5052c4dc5746760283cf3b40e4d07437d3d307f5ae2700a85a30c21f3a5d8873960e2ed808093d8c1d0f88a469d3e188032e73d202884
+Homepage: https://github.com/itsmygithubacct/kilix
+Description: terminal desktop built on the Kilix engine
+ Kilix turns a GPU terminal into a small desktop: tabs and panes that outlive
+ the window, a settings panel, a file and application launcher, session
+ persistence and helpers for coding agents.
+ .
+ This package carries the launcher, its configuration, the built-in desktop
+ and the Python modules Kilix pins. It installs under /usr/share/kilix and
+ adds the command kilix. The terminal engine and the compiled helpers come
+ from kilix-engine and kilix-native. Per-user state stays under
+ ~/.local/gpu_terminal.
+
+Package: kilix
+Architecture: all
+Version: 0.2.3+packaging11
+Priority: optional
+Section: x11
+Maintainer: itsmygithubacct <itsmygithubacct@users.noreply.github.com>
+Installed-Size: 8769
+Depends: kilix-engine, kilix-native, kilix-tui-utils (>= 0.3.1+packaging2), python3, git, procps, util-linux
+Recommends: kilix-multiplexer
+Filename: pool/main/k/kilix/kilix_0.2.3+packaging11_all.deb
+Size: 2426764
+MD5sum: 731852862c332e316c90b75e63f46fcd
+SHA1: d930f5bd81105c91f9537aba37d0129c2054c3fe
+SHA256: 194463b6cfdda6cadd285c11ea7167ce8389839060c35aafe0d988aa17c8cf21
+SHA512: c7d640883a8582dac80e81598457cc0a98491d6323dcf7447ff204559718ba982d820d045380504aa978cf1913050c145958175764fc07d3f4db34f07b51b511
 Homepage: https://github.com/itsmygithubacct/kilix
 Description: terminal desktop built on the Kilix engine
  Kilix turns a GPU terminal into a small desktop: tabs and panes that outlive
