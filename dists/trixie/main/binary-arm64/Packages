@@ -518,6 +518,33 @@ Description: terminal desktop built on the Kilix engine
 
 Package: kilix
 Architecture: all
+Version: 0.2.3+packaging12
+Priority: optional
+Section: x11
+Maintainer: itsmygithubacct <itsmygithubacct@users.noreply.github.com>
+Installed-Size: 8768
+Depends: kilix-engine, kilix-native, kilix-tui-utils (>= 0.3.1+packaging2), python3, git, procps, util-linux
+Recommends: kilix-multiplexer
+Filename: pool/main/k/kilix/kilix_0.2.3+packaging12_all.deb
+Size: 2426964
+MD5sum: 5405384ca9d3b294da43438fd009ab70
+SHA1: d3c0d29d4a431a9065e519d98c13b141a55e6615
+SHA256: 573a7074d88bd710cd4ee6ce93cf79c1d9aff100862eab888262610b359fbfaf
+SHA512: 1f11c482e86a04d39b0d61f1c15d003473e7363313119a05d5a0337dc7128408a748545dafa3bb9924508048ed09beadb0396e873206bb9ea1bcb9818c8a973a
+Homepage: https://github.com/itsmygithubacct/kilix
+Description: terminal desktop built on the Kilix engine
+ Kilix turns a GPU terminal into a small desktop: tabs and panes that outlive
+ the window, a settings panel, a file and application launcher, session
+ persistence and helpers for coding agents.
+ .
+ This package carries the launcher, its configuration, the built-in desktop
+ and the Python modules Kilix pins. It installs under /usr/share/kilix and
+ adds the command kilix. The terminal engine and the compiled helpers come
+ from kilix-engine and kilix-native. Per-user state stays under
+ ~/.local/gpu_terminal.
+
+Package: kilix
+Architecture: all
 Version: 0.2.3+packaging6
 Priority: optional
 Section: x11
