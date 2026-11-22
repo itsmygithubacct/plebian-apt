@@ -4,34 +4,34 @@ Hash: SHA512
 Architectures: amd64 arm64
 Codename: trixie
 Components: main
-Date: Sat, 21 Nov 2026 13:35:08 +0000
+Date: Sun, 22 Nov 2026 11:22:43 +0000
 Label: Plebian-OS
 Origin: Plebian-OS
 Suite: trixie
 MD5Sum:
- c243082001a88b26cae097595b60f103            62984 main/binary-amd64/Packages
- c7a1a04944480f00ef03139b7afed0b0            18408 main/binary-amd64/Packages.gz
+ a64d140f0c0c6a470d93b94b29f6181c            65306 main/binary-amd64/Packages
+ eaf76ac09fe9077dde810af951824801            18844 main/binary-amd64/Packages.gz
  bd025328289f7e721cc43c37de5c1c45            61644 main/binary-arm64/Packages
  56ff47110beaea66596a93bdb3938163            18034 main/binary-arm64/Packages.gz
 SHA1:
- 24422cdff0fb7e0a78f4214853017dfa18e42f29            62984 main/binary-amd64/Packages
- 2ae6eb024da1b113e8cfeb6578874f76ee3aa2b6            18408 main/binary-amd64/Packages.gz
+ b061fe5f12093900a3113136c72559ee733ab926            65306 main/binary-amd64/Packages
+ 661c3e6878375828fcf2a8cf354373c5c1985ee5            18844 main/binary-amd64/Packages.gz
  d49a54c97cbeb513f5488d07577e58be06394b72            61644 main/binary-arm64/Packages
  491aa773c3105f068531ee6f756284dd19c41e19            18034 main/binary-arm64/Packages.gz
 SHA256:
- 38e65e089057522bba2a6a323f72ca34c0aa2fcf0962cc59363ba6f54932728b            62984 main/binary-amd64/Packages
- 3d8d6ce5eabb1e776bf10a51766aba93c7b85302a364a58d11825dbee54e6328            18408 main/binary-amd64/Packages.gz
+ aebbbd343916ca4b2136e0b10472d2f82afdeccd602c0492e9f57d325bd0fa8f            65306 main/binary-amd64/Packages
+ 4b2fa939808b00a85c3db3299f858430cbbc1fe5ab4f1a2d6604863c44dfc678            18844 main/binary-amd64/Packages.gz
  86783a899b3b8d20b437cf27d5f00692ad9ed9b76a1b6ab89365ddd70ce1de9f            61644 main/binary-arm64/Packages
  df81b21a8f4cc12ddf7bcb4b8c1f182f387a5b19a761282b2d5d4ddb527a4fca            18034 main/binary-arm64/Packages.gz
 SHA512:
- 8d27410319b68cc5d108492d7266f5ea391bfe310d0fcfc39361ff07b4516913e92027c9b5770d2a29fe75795fe8a2a1c82bcb58707e9f0e9aa5369cc0059a8a            62984 main/binary-amd64/Packages
- 9f5c3443e1c663ca681585abcc396aa7a01cb020fd02f3fb25962905b763a0905f7d4dfe56fc4dc9dc13afdc417b6c4915fb0e576126ebd0f592b981261aa9c7            18408 main/binary-amd64/Packages.gz
+ ab46bf76fce8e93d027d801387a386acaca70bdc80e907d8b95cfffd9cce3ba3612e4c80eb210635fc3162d686b65d6043220e20fe43a5260ca974858726999b            65306 main/binary-amd64/Packages
+ d09ac47b77a74009d381a434dee256d9fd1f137feb0615e7c4def8aef2f0731314a773c79e2678746386a967f6c3c462b896bf49d3bfe77c74719f17a1e6c15b            18844 main/binary-amd64/Packages.gz
  dbe08e89fa4f91029ad3f3d8d44942d2310cda7e86e0ab2dd81d27e51f60d5bad3c5c01fc59fa53eeb076640f633034045b34cbbaf195b97426f5eecf9aa8218            61644 main/binary-arm64/Packages
  43859185d844479f37abdd79dc70d0feff2c2afde1126bbfe36787057072a4b6b67f6795645a839ffe46ea272fe3f0be159489c6dba54726f8480fe529f74fd8            18034 main/binary-arm64/Packages.gz
 -----BEGIN PGP SIGNATURE-----
 
-iHUEARYKAB0WIQSib7VV/ZBFd8nquMeXj286pkoe8gUCawGeDAAKCRCXj286pkoe
-8sLDAP9CLCdbHCUTO3kZ0ush06dVhFayj8rZQyJRmOLSyORNqgD+ICRsgmXRolkI
-EHn0gUvN3nlB9DHVx4k2iRU1N2cxhAg=
-=TQPA
+iHUEARYKAB0WIQSib7VV/ZBFd8nquMeXj286pkoe8gUCawLQgwAKCRCXj286pkoe
+8vXPAP9g8dJY6gu7h1gpFs1kWo6TKK4l6HN0EZYhY73d1/Z4agEA1RnsuJvaEV2k
+pqKio1NaiWP9ao7ySenX09kLtAzSWwU=
+=PgRt
 -----END PGP SIGNATURE-----
