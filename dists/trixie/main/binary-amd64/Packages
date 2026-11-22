@@ -108,6 +108,26 @@ Description: music player
  and its meter library under /usr. The player reports its usage with
  --help, without opening a window.
 
+Package: kilix-amp
+Architecture: amd64
+Version: 0.20261029+packaging4
+Priority: optional
+Section: sound
+Maintainer: itsmygithubacct <itsmygithubacct@users.noreply.github.com>
+Installed-Size: 9830
+Depends: libasound2t64 (>= 1.0.29), libc6 (>= 2.39), libfluidsynth3 (>= 2.0.5), libgcc-s1 (>= 4.2), libkilix-encodec (>= 0.1.5), libsdl2-2.0-0 (>= 2.24.0), libsdl2-image-2.0-0 (>= 2.0.5), libsndfile1 (>= 1.0.20), libwayland-client0 (>= 1.11.0), zlib1g (>= 1:1.1.4), kilix-mpv
+Filename: pool/main/k/kilix-amp/kilix-amp_0.20261029+packaging4_amd64.deb
+Size: 2775760
+MD5sum: 4ea04ed5bfcfc203c1c02bd83a422a1a
+SHA1: 4e232c4b8e4dbe60de8fad4e92c4544114e5fd6b
+SHA256: b7f5397d6f6be61701c8ef70bfa6a2cdfb82e052dda42132655be7bc5711405e
+SHA512: e1fe7f0d2386ebd21dc8f5d55ad1e766f60aee7e3b1a49aec3694b625e0c6ea675366398f1aef3ab30ae0700f95546f62a4302405ff0a7c533a99346fc4248de
+Homepage: https://github.com/itsmygithubacct/kilix-amp
+Description: music player
+ kilix-amp is a skinnable music player. This package installs the player
+ and its meter library under /usr. The player reports its usage with
+ --help, without opening a window.
+
 Package: kilix-claudex
 Architecture: all
 Version: 0.20261112+packaging1
@@ -737,6 +757,33 @@ MD5sum: 8c4d2b1a2edbdb95c221a4e77a9ecbb2
 SHA1: 09e63063701f823410abe8ff76e667dafdf66270
 SHA256: d9bb6b8d695de74ac0f8e35034993f4bfa7a4d9ed9072a24b092e28a72bb35cb
 SHA512: 9270492580b44badf30438359c8d6712e114664c1de594acd38b1538e2abac4d384f2ee99003a24997d5c1d472279ff9c4cbb19ee40924aac40f0cf59f3276de
+Homepage: https://github.com/itsmygithubacct/kilix
+Description: terminal desktop built on the Kilix engine
+ Kilix turns a GPU terminal into a small desktop: tabs and panes that outlive
+ the window, a settings panel, a file and application launcher, session
+ persistence and helpers for coding agents.
+ .
+ This package carries the launcher, its configuration, the built-in desktop
+ and the Python modules Kilix pins. It installs under /usr/share/kilix and
+ adds the command kilix. The terminal engine and the compiled helpers come
+ from kilix-engine and kilix-native. Per-user state stays under
+ ~/.local/gpu_terminal.
+
+Package: kilix
+Architecture: all
+Version: 0.2.3+packaging15
+Priority: optional
+Section: x11
+Maintainer: itsmygithubacct <itsmygithubacct@users.noreply.github.com>
+Installed-Size: 9004
+Depends: kilix-engine, kilix-native, kilix-tui-utils (>= 0.3.1+packaging2), dbus-daemon, git, polkitd, procps, python3, python3-dbus, util-linux
+Recommends: kilix-multiplexer
+Filename: pool/main/k/kilix/kilix_0.2.3+packaging15_all.deb
+Size: 2429472
+MD5sum: 447bbfe7287ed5b98c1035cd469341c1
+SHA1: c8cc6d6ee0920176f0e453c43f09f8be19f32554
+SHA256: 1f29830248470e7128c7141688b7a63f2280df3aaafcf0189e4ffc8c7864da82
+SHA512: f0d20353d0fd367ed9d2fc2c69fb97421d2375f0dfd655c82cf588c58bf000fcb6c12b7843045f62229375efa2a4b49fb619303cf4904f52f47627e7553f9f26
 Homepage: https://github.com/itsmygithubacct/kilix
 Description: terminal desktop built on the Kilix engine
  Kilix turns a GPU terminal into a small desktop: tabs and panes that outlive
