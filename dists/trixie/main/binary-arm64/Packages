@@ -23,6 +23,31 @@ Description: Kilix 95, the default Kilix desktop
  finds it when no provider checkout is configured. Its settings, caches and
  state stay in each user's home.
 
+Package: kilix-95
+Architecture: all
+Version: 0.2.3+packaging3
+Priority: optional
+Section: x11
+Maintainer: itsmygithubacct <itsmygithubacct@users.noreply.github.com>
+Installed-Size: 28147
+Depends: kilix (>= 0.2.3+packaging13), python3, python3-pil, python3-xlib, xauth, xvfb
+Recommends: python3-gi, gir1.2-glib-2.0
+Filename: pool/main/k/kilix-95/kilix-95_0.2.3+packaging3_all.deb
+Size: 25625924
+MD5sum: 41c6583f46eb4b14bb0e1dd1edb19163
+SHA1: 1b590fa9d9ff213a6b8f5a180999d2ee17802870
+SHA256: 8f065402f777bf24eb39c177d4400449ec8d7d43650b965f9d736bbbc347c6be
+SHA512: caa506414b001e735677c676b94ef2da7f73c8d719d8a488b9d35302766d8b90462d9b21b26db12efae138066f6f6de2042f1d97ee5b0d3dea0868f679b5d803
+Homepage: https://github.com/itsmygithubacct/kilix-95
+Description: Kilix 95, the default Kilix desktop
+ Kilix 95 is a desktop drawn as pixels inside a Kilix pane: a taskbar and
+ Start menu, windows, a file manager, settings, small applications and games,
+ in the style of a late-1990s desktop.
+ .
+ This package installs it under /usr/share/kilix-95, where the kilix launcher
+ finds it when no provider checkout is configured. Its settings, caches and
+ state stay in each user's home.
+
 Package: kilix-amp
 Architecture: arm64
 Version: 0.20261029+packaging1
