@@ -427,6 +427,28 @@ Description: plain requests to Kilix
  on first use. Catalog, tuning, transcript, and rollout libraries come
  from their own packages.
 
+Package: kilix-needle
+Architecture: all
+Version: 0.20261116+packaging5
+Priority: optional
+Section: utils
+Maintainer: itsmygithubacct <itsmygithubacct@users.noreply.github.com>
+Installed-Size: 1512
+Depends: python3, kilix-content, kilix-ml, kilix-transcript-clean, kilix-tui-utils
+Filename: pool/main/k/kilix-needle/kilix-needle_0.20261116+packaging5_all.deb
+Size: 323448
+MD5sum: 99687bc2a09d5216c1b9995f7b82b530
+SHA1: cd7ae34e783666ad1d6394e8a5dd4f1221356809
+SHA256: ad5ac30a15e9a035939a856aa3a7c23fd1ec563dbda514d67fac8295618f0196
+SHA512: 92d869d837237b67a47fbc43a676a568a520b1ac96008d88517a2d97f2b5fa9bf84191461c5cb11203ff2b2e96f6ca22d64d785c4fc60def956cf447756f30d0
+Homepage: https://github.com/itsmygithubacct/kilix-needle
+Description: plain requests to Kilix
+ kilix-needle turns a request into one Kilix job. This package installs
+ the command and its runtime under /usr/share/kilix-needle.
+ The command model is not included; kilix-needle install downloads it
+ on first use. Catalog, tuning, transcript, and rollout libraries come
+ from their own packages.
+
 Package: kilix-pdf
 Architecture: amd64
 Version: 0.1.0+packaging1
